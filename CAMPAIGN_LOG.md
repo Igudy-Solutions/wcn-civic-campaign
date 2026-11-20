@@ -60,7 +60,16 @@ Newest first.
   with a hard ink shadow, letters popping in, doodles, tickets and cards,
   slanted wipes, subtitle box), recoloured to forest and lime. Cream dotted
   background, so the logo is the forest version (`wcn-horizontal-forest.png`).
-- Arkcore: do not push to igudy/wcn-civic-campaign. Waiting for the right repo.
+- Reel v2: Arkcore liked v1 but it looked too much like NectAll (they make
+  NectAll videos too). Kept neo-brutalism, made it WCN's own: photo
+  backgrounds of people, square labels with lime shadows, thumbprint and tick
+  marks, calendar tiles, ticker, word-by-word subtitles, shutter cuts. Now
+  1080x1920 with a voiceover (Kokoro, `tools/voiceover.py`) and a music bed.
+- Reel fixes from Arkcore: INEC is said as one word ("eye-neck"), never
+  spelled out; never say "one post a day"; the shutter transition and whoosh
+  were too much, so scenes now cross-fade quietly.
+- Arkcore: do not push to igudy/wcn-civic-campaign. Push to
+  Igudy-Solutions/wcn-civic-campaign (waiting on GitHub being connected).
 
 ## Open questions
 

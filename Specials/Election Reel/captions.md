@@ -1,23 +1,22 @@
 # Election reel, 57 days to go
 
-**File** `election-reel.mp4` (1080x1350, 34 s, 30 fps, no sound)
-**Built by** `tools/reel.py` (`--stills` for one PNG per scene)
-**Style** the NectAll event videos: sticker labels, letter pop, doodles, tickets and cards, slanted wipes. WCN forest and lime, Sora.
+**File** `election-reel.mp4` (1080x1920, 1080p vertical, 54 s, 30 fps, voice and music)
+**Built by** `tools/voiceover.py` (the voice) then `tools/reel.py` (the video; `--stills` for one PNG per scene)
+**Look** WCN neo-brutalist: full photos of people under a forest tint, square sticker labels with a lime shadow, thumbprint and tick marks, calendar tiles, a scrolling lime ticker, word-by-word subtitles, soft cross-fades between scenes. Sora only.
 
-Add a sound in Instagram or X when posting. Post it as a Reel; it also sits in the feed at 4:5.
+**Voice** Kokoro neural voice `af_heart` (open licence). To use a real voice, record each line in `tools/voiceover.py` as `vo/01.wav` to `vo/08.wav`, update `vo/durations.json`, and re-run `reel.py`; scenes re-time themselves.
+**Music** an original synth bed made in the script (no licence needed). Swap in an Instagram sound if you prefer, and lower the original audio.
 
-## Scenes
+## Voiceover, scene by scene
 
-| Time | On screen | Subtitle |
-|---|---|---|
-| 0-4 s | 57 days to election day | Nigeria votes on Saturday 16 January 2027. |
-| 4-9 s | In 2023, 73% of us stayed home (10 people, 3 voted) | About 93 million registered. About 25 million voted. |
-| 9-13 s | Queue photo, turnout counts to 26.7%, lowest since 1999 | Won by about 1.8 million votes; 68 million stayed home. |
-| 13-17 s | Voter register card counts to 103.4M, that includes you | 103.4 million Nigerians are registered for 2027. |
-| 17-21 s | Two tickets: Sat 16 Jan and Sat 06 Feb 2027 | Mark both dates now. |
-| 21-26 s | No PVC? No vote. PVC card, COLLECTED stamp | Collect yours at your INEC LGA office. In person. |
-| 26-29 s | Inked thumb photo, your vote, your voice | Don't sell it. Don't waste it. |
-| 29-34 s | End card: logo, Show up 16 Jan 2027, IG and X handles | |
+1. 57 days. Nigeria votes on Saturday, 16 January.
+2. In 2023, 73% of registered voters stayed home.
+3. Turnout was 26.7%, the lowest since 1999. The race was won by about 1.8 million votes.
+4. Now, over 103 million Nigerians are registered. That includes you.
+5. Mark two Saturdays. January 16, for President and the National Assembly. February 6, for Governor and State Assembly.
+6. No PVC, no vote. Collect yours at your INEC office, in person. (INEC said as one word, "eye-neck".)
+7. Your vote is your voice. Don't sell it. Don't waste it.
+8. Show up. Follow World Changers Network.
 
 ## Sources
 

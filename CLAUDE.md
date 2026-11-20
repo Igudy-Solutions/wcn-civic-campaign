@@ -87,6 +87,8 @@ Setup once: Google Chrome, Python 3, `pip3 install pillow`.
 - **Photos:** people doing election things in every background. AI images
   never on candidate slides and never of real public figures.
 - **Carousels tell a story.** Each slide picks up the one before it.
+- **Every video is voiced.** One voice line per scene, mixed over the music
+  bed by `tools/video_engine.py`. Never ship a silent video.
 - **Videos carry no day count.** No "N days to go", no countdown, not even in
   the ticker, so any video can be shared on any day. Put the days left in the
   caption only. Videos are built with `tools/video_engine.py` (see a

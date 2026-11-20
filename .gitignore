@@ -1,0 +1,5 @@
+.DS_Store
+__pycache__/
+*.raw.png
+_to_delete/
+Specials/Election Reel/reel.html

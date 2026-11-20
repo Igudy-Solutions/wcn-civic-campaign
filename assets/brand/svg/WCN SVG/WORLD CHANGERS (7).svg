@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 383.25 284.17">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.09em;
+      }
+
+      .cls-2 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-3 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-4 {
+        font-size: 51.62px;
+      }
+
+      .cls-5 {
+        font-family: Sora-Regular, Sora;
+      }
+
+      .cls-6 {
+        font-family: Sora-SemiBold, Sora;
+        font-weight: 600;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <g>
+        <circle cx="189.26" cy="19.9" r="19.9"/>
+        <path d="m241.13,134.92c-10.46,22.83-29.87,33.65-49.48,33.23-19.62.41-39.03-10.4-49.48-33.23-41.1,13.46-63.98-21.84-57.71-59.37l12.47-3.05c.05,10.25-2.12,18.22.67,28.42,4.3,15.63,22.36,28.93,37.73,18.84-3.88-18.01-6.52-37.01-3.11-55.18,2.64-3.26,35.15-6.52,38.51-4.19,3.93,20.91-2.43,44.41-14.03,62.17,6.63,16.31,20.55,25.52,34.94,25.26,14.39.26,28.31-8.95,34.94-25.26-11.59-17.75-17.96-41.25-14.03-62.17,3.36-2.33,35.87.93,38.51,4.19,3.42,18.17.78,37.17-3.11,55.18,15.37,10.09,33.44-3.21,37.73-18.84,2.8-10.2.62-18.17.67-28.42l12.47,3.05c6.26,37.53-16.62,72.83-57.71,59.37Z"/>
+      </g>
+      <text class="cls-4" transform="translate(0 226.01)"><tspan class="cls-6"><tspan class="cls-1" x="0" y="0">W</tspan><tspan class="cls-2" x="50.18" y="0">orld Changers</tspan></tspan><tspan class="cls-5"><tspan class="cls-2" x="89.46" y="43.5">Net</tspan><tspan class="cls-3" x="176.81" y="43.5">w</tspan><tspan class="cls-2" x="216.71" y="43.5">ork</tspan></tspan></text>
+    </g>
+  </g>
+</svg>

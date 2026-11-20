@@ -22,3 +22,16 @@ the set looks like one shoot:
 
 To add more, keep the scene everyday and non-partisan, and never depict a real
 public figure.
+
+Added 20 Nov 2026 for Days 56 to 47 (same rules, same Figma file):
+
+| File | Scene |
+|---|---|
+| ai-09-hospital.png | Public hospital corridor, nurses, a young mother with a baby waiting |
+| ai-10-classroom.png | Crowded public secondary school classroom, teacher at the chalkboard |
+| ai-11-market-trader.png | Market woman at her stall counting a few naira notes |
+| ai-12-handshake.png | Two young men shaking hands outside a polling unit |
+| ai-13-family-table.png | Family dinner, an uncle talking, a young woman listening |
+| ai-14-town-hall.png | Town hall, a young woman asking a question into a microphone (a cap badge was blurred so it can't read as a party logo) |
+| ai-15-bus-stop-phone.png | Young man at a Lagos bus stop reading on his phone |
+| ai-16-pvc-proud.png | Young woman holding up a plain green voter card, friends behind |

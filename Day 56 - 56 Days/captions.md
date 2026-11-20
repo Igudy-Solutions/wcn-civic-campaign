@@ -1,32 +1,43 @@
-# Day 56, 56 days. Where is your PVC right now?
+# Day 56, 56 Days
 
 **Post on** Sat 21 Nov 2026
 **Format** Single
 **Pillar** Know the Process
-**Status** planned
-**Built by** `tools/day_56.py` (not written yet)
+**Status** built, for team review
+**Built by** `tools/day_56.py`
 
-## Idea
-
-Countdown single. PVC collection at INEC LGA office
+Countdown single that turns the number into a question.
 
 ## The slides
 
-| # | What it carries |
-|---|---|
-| 1 | Cover: 56 days. Where is your PVC right now? |
+| # | Photo | What it carries |
+|---|---|---|
+| 1 | Young woman holding up her PVC | 56 days. Where is your PVC right now? Not collected? INEC LGA office, in person |
+
+## Sources
+
+(not printed on the slides)
+
+- PVC collection in person at your INEC LGA office: INEC
 
 ## Instagram caption
 
-(write here)
+56 days to Saturday 16 January 2027.
+
+Where is your PVC right now? Not "somewhere at home". In your hand.
+
+No PVC, no vote. If you registered but haven't collected it, go to your INEC office in your local government area. You must collect it in person. Nobody can collect it for you.
+
+Tag the friend who keeps saying "I'll pick it up later".
 
 #YourVoteYourVoice #YourVoteCounts #NigeriaDecides2027 #56DaysToGo
 
 ## X (Twitter)
 
-Max 4 images per post. A carousel over 4 slides goes out as a thread:
-post 1 takes slides 1 to 4, each reply takes the next 4. Under 280 characters each.
+**Post 1**
 
-**Post 1** (slides 1 to 4)
+56 days to election day.
 
-(write here)
+Where is your PVC right now? Not "somewhere at home". In your hand.
+
+Not collected yet? Your INEC LGA office, in person. #NigeriaDecides2027

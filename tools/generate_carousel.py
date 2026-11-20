@@ -456,17 +456,22 @@ def candidate_layers(c):
         photo = (f'<div class="cphoto{"" if cut else " full"}" '
                  f'style="background-image:url({data_uri(path)})"></div>')
     else:
-        photo = (f'<div style="position:absolute;left:290px;top:190px;width:500px;height:560px;'
-                 f'border:3px dashed rgba(255,255,255,0.9);border-radius:24px;background:rgba(7,9,11,0.55);'
-                 f'display:flex;align-items:center;justify-content:center;text-align:center;padding:30px;'
-                 f'font-weight:700;font-size:22px;letter-spacing:0.14em;color:#fff">'
-                 f'CUT-OUT PHOTO<br/>images/candidates/<br/>{esc(c.get("photo") or "")}</div>')
+        # No photo yet: a clean monogram in the party colour, the same for
+        # every candidate, so the post can be reviewed. Drop the photo into
+        # images/candidates/ and it replaces this on the next render.
+        ab = esc(c.get("abbr") or "")
+        photo = (f'<div style="position:absolute;left:290px;top:200px;width:500px;height:500px;border-radius:50%;'
+                 f'background:rgba(7,9,11,0.78);border:10px solid {cols[0]};display:flex;flex-direction:column;'
+                 f'align-items:center;justify-content:center;color:#fff">'
+                 f'<div style="font-family:Display;font-weight:800;font-size:150px;letter-spacing:-0.04em;line-height:1">{ab}</div>'
+                 f'<div style="margin-top:18px;font-weight:700;font-size:20px;letter-spacing:0.22em;opacity:0.7">PHOTO TO COME</div></div>')
     return f'<div class="cband">{bands}</div>{photo}<div class="cfade"></div>'
 
 
 def k_candidate(c):
     out = f'<div class="kicker">{esc(c.get("kicker", "On the ballot · President"))}</div>'
-    out += f'<div class="cname">{rich(c["name"])}</div>'
+    long = len(c["name"]) > 20
+    out += f'<div class="cname"{" style=" + chr(34) + "font-size:" + str(px(88)) + "px" + chr(34) if long else ""}>{rich(c["name"])}</div>'
     pc = c.get("colours", [ACCENT])[0]
     out += (f'<div class="cparty" style="background:{pc};color:{c.get("party_ink", "#fff")}">'
             f'{esc(c["party"])}</div>')

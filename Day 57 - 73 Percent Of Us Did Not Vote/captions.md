@@ -53,8 +53,7 @@ Step one: collect your PVC, in person, at your INEC LGA office.
 
 Vote your choice. Don't sell your vote. The bribe can't last you four years.
 
-We will post every day until election day. We will never tell you who to vote
-for, only that you should.
+We will never tell you who to vote for, only that you should.
 
 Save this and share it with one person who skipped 2023.
 

@@ -68,10 +68,22 @@ Newest first.
 - Reel fixes from Arkcore: INEC is said as one word ("eye-neck"), never
   spelled out; never say "one post a day"; the shutter transition and whoosh
   were too much, so scenes now cross-fade quietly.
+- Arkcore: no day count in any video from now on, so videos can be shared on
+  any day; the days left go in the caption.
 - Arkcore: do not push to igudy/wcn-civic-campaign. Push to
   Igudy-Solutions/wcn-civic-campaign (waiting on GitHub being connected).
 
+- Days 56 to 47 built (Arkcore: "generate the images for the next 10 days",
+  "some video, some single image, some carousel"). Carousels 55, 53, 50, 49,
+  47; singles 56, 54, 51; videos 52 and 48 (Format `Video` added to the plan
+  sheet). Eight new AI backgrounds (ai-09 to ai-16, see images/ai/PROMPTS.md).
+- Candidate slides without a photo now show a party monogram ("photo to
+  come") instead of a dashed box. Real photos only, never AI.
+- Day 57 CTA and caption no longer mention posting every day.
+
 ## Open questions
+
+- Candidate photos for Day 49 (AA, AAC, ADC) and the rest of the series.
 
 - Party colours in `tools/parties.py` are unconfirmed.
 - Display order of names: INEC prints surname first. `display` names in the

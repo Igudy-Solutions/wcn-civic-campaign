@@ -92,7 +92,7 @@ SLIDES = [
     ("cta", dict(
         lead="57 days from now, the count starts again.\nDon't be part of the 73% this time.",
         punch="Save. Share.\nShow up.",
-        body="Follow for one post a day until election day, and send this to someone who skipped 2023.",
+        body="Follow World Changers Network, and send this to someone who skipped 2023.",
         photo="ai-02-inked-thumb.png",
     )),
 ]

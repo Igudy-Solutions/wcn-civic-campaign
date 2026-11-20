@@ -182,3 +182,15 @@ it here. Never edit the engine to make one post work.
 > tools/day_57.py, render it, and fill in that day's captions.md with the
 > Instagram caption and the X thread. Follow the neutrality rules in
 > section 4 and 5 exactly.
+
+
+## 11. Videos (Reels)
+
+- 1080x1920, voiced, built with `tools/video_engine.py`. The look is WCN's own
+  neo-brutalism over photos of people (see CAMPAIGN_LOG for why it must not
+  look like the NectAll videos).
+- **No day count in any video.** Videos must be shareable on any day. The
+  days left go in the caption.
+- One voice line per scene, said the way it should sound: INEC is "Eye-neck",
+  PVC is "P V C". Never say "one post a day".
+- Scenes cross-fade softly. No shutters, no whoosh.

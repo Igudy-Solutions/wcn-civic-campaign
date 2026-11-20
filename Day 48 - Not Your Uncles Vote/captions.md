@@ -1,32 +1,46 @@
-# Day 48, Not your uncle's vote. Not your pastor's. Not your boss's. Yours.
+# Day 48, Not Your Uncles Vote
 
 **Post on** Sun 29 Nov 2026
-**Format** Single
+**Format** Video (Reel), 24 s, voiced, 1080x1920
 **Pillar** Know Your Power
-**Status** planned
-**Built by** `tools/day_48.py` (not written yet)
+**Status** built, for team review
+**Built by** `tools/day_48.py`
 
-## Idea
+Your vote is your own decision. Pastor and imam together, so no faith is singled out. No day count on screen.
 
-Spreadsheet: your vote should be your decision
+## The scenes
 
-## The slides
+| # | Photo | What it carries |
+|---|---|---|
+| 1 | Family dinner | Your uncle has an opinion |
+| 2 | Town hall | Your pastor. Your imam |
+| 3 | Bus stop | Your boss |
+| 4 | Friends | Listen. Then decide for yourself |
+| 5 | Ballot box | Secret ballot. Nobody sees who you choose |
+| 6 | PVC | End card: Not their vote. Yours. |
 
-| # | What it carries |
-|---|---|
-| 1 | Cover: Not your uncle's vote. Not your pastor's. Not your boss's. Yours. |
+## Sources
+
+(not printed on the video)
+
+- Secret ballot: Electoral Act 2022
 
 ## Instagram caption
 
-(write here)
+Not your uncle's vote. Not your pastor's or your imam's. Not your boss's.
+
+Yours.
+
+Listen to everyone. Ask questions. Then decide for yourself. Your ballot is secret, so nobody sees who you choose.
 
 #YourVoteYourVoice #YourVoteCounts #NigeriaDecides2027 #48DaysToGo
 
 ## X (Twitter)
 
-Max 4 images per post. A carousel over 4 slides goes out as a thread:
-post 1 takes slides 1 to 4, each reply takes the next 4. Under 280 characters each.
+**Post 1** (video)
 
-**Post 1** (slides 1 to 4)
+Not your uncle's vote. Not your pastor's or imam's. Not your boss's.
 
-(write here)
+Yours.
+
+Listen to everyone, then decide for yourself. Your ballot is secret. #NigeriaDecides2027

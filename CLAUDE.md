@@ -21,7 +21,7 @@ Numbers or Google Sheets. One row per day:
 |---|---|
 | Day | 57 down to 1. Do not add or remove rows |
 | Post date | Filled in automatically from the Day. Leave it |
-| Format | `Carousel` or `Single` |
+| Format | `Carousel`, `Single` or `Video` |
 | Pillar | Know Your Power, Know the Process, Vote Wisely, Peaceful Participation, Demand Accountability, Know the Candidates |
 | Folder title | Short name for the day's folder, letters and numbers only, e.g. `Where Is Your PVC` |
 | Hook (cover title) | The cover line. Provocative, never partisan |
@@ -87,6 +87,12 @@ Setup once: Google Chrome, Python 3, `pip3 install pillow`.
 - **Photos:** people doing election things in every background. AI images
   never on candidate slides and never of real public figures.
 - **Carousels tell a story.** Each slide picks up the one before it.
+- **Videos carry no day count.** No "N days to go", no countdown, not even in
+  the ticker, so any video can be shared on any day. Put the days left in the
+  caption only. Videos are built with `tools/video_engine.py` (see a
+  `tools/day_NN.py` whose Format is `Video`).
+- **Voice lines:** say INEC as one word ("Eye-neck" in the script). Never say
+  "one post a day".
 - Change the look only in `tools/generate_carousel.py`, and write it down in
   `CAROUSEL_GUIDE.md` and `CAMPAIGN_LOG.md`.
 

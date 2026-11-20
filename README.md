@@ -22,6 +22,7 @@ downsampled with Pillow, the same pipeline as Eden Centre and Ignovations.
 | `tools/generate_carousel.py` | The engine. Shared by every day. |
 | `tools/day_NN.py` | One small file per day, words and photo names only. |
 | `tools/plan.py` | Syncs the sheet: checks it, renames or creates day folders, rebuilds `CONTENT_PLAN.md`. |
+| `tools/video_engine.py` | The video engine for Reels (voice, music, look). Day videos call it. |
 | `tools/reel.py` | The election motion video (MP4). See `Specials/Election Reel/captions.md`. |
 | `tools/parties_single.py` | The one-image list of every party on the presidential ballot. |
 | `tools/parties.py` | Party colours for candidate slides (confirm before use). |
@@ -59,4 +60,3 @@ INEC's list only. Every number has a source in the day script and captions.md
 (not printed on the slide). WCN is not affiliated with whyvote.ng. Procedural
 claims (polling times, documents, ballot rules) are checked against INEC's
 latest guidance before posting.
-# wcn-civic-campaign

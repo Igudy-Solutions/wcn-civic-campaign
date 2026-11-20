@@ -9,16 +9,16 @@ with whyvote.ng; never cite it in a post.
 | Day | Post date | Format | Pillar | Hook | Status | Owner | Notes |
 |---|---|---|---|---|---|---|---|
 | 57 | Fri 20 Nov | Carousel | Know Your Power | 73 percent of us did not vote in 2023. Will you be one of them? | built | Claude | Launch. Turnout, the two dates, 2027 register, PVC, vote buying |
-| 56 | Sat 21 Nov | Single | Know the Process | 56 days. Where is your PVC right now? | planned |  | Countdown single. PVC collection at INEC LGA office |
-| 55 | Sun 22 Nov | Carousel | Know Your Power | Five names on your ballot. Most people can only name one. | planned |  | whyvote 'Who does what': President, Senator, Rep, Governor, State Assembly |
-| 54 | Mon 23 Nov | Single | Vote Wisely | A slogan is not a plan. | planned |  | Spreadsheet: don't choose based on slogans alone |
-| 53 | Tue 24 Nov | Carousel | Know the Candidates | 18 people want to be your president. Can you name five? | planned |  | INEC final list. Party abbreviations only, ballot order. No ranking |
-| 52 | Wed 25 Nov | Carousel | Vote Wisely | Your vote for 5,000 naira? Here is the maths. | planned |  | Vote selling over 4 years. 'The bribe can't last you 4 years' |
-| 51 | Thu 26 Nov | Single | Peaceful Participation | No candidate is worth your life. | planned |  | Spreadsheet: disagreement is not a reason for violence |
-| 50 | Fri 27 Nov | Carousel | Know Your Power | They decide your hospital, your school and your job. Do you know who they are? | planned |  | Spreadsheet carousel: why elections matter beyond election day |
-| 49 | Sat 28 Nov | Carousel | Know the Candidates | Meet the candidates 1 of 6 | planned |  | Tickets AA, AAC, ADC. Same layout, party colours, INEC facts only |
-| 48 | Sun 29 Nov | Single | Know Your Power | Not your uncle's vote. Not your pastor's. Not your boss's. Yours. | planned |  | Spreadsheet: your vote should be your decision |
-| 47 | Mon 30 Nov | Carousel | Vote Wisely | Popular is not the same as prepared. 5 checks before you choose. | planned |  | Spreadsheet: five things to examine before choosing a candidate |
+| 56 | Sat 21 Nov | Single | Know the Process | 56 days. Where is your PVC right now? | built | Claude | Countdown single. PVC collection at INEC LGA office |
+| 55 | Sun 22 Nov | Carousel | Know Your Power | Five names on your ballot. Most people can only name one. | built | Claude | whyvote 'Who does what': President, Senator, Rep, Governor, State Assembly |
+| 54 | Mon 23 Nov | Single | Vote Wisely | A slogan is not a plan. | built | Claude | Spreadsheet: don't choose based on slogans alone |
+| 53 | Tue 24 Nov | Carousel | Know the Candidates | 18 people want to be your president. Can you name five? | built | Claude | INEC final list. Names and parties as INEC lists them, ballot order. No ranking |
+| 52 | Wed 25 Nov | Video | Vote Wisely | Your vote for 5,000 naira? Here is the maths. | built | Claude | Vote selling over 4 years. 'The bribe can't last you 4 years' |
+| 51 | Thu 26 Nov | Single | Peaceful Participation | No candidate is worth your life. | built | Claude | Spreadsheet: disagreement is not a reason for violence |
+| 50 | Fri 27 Nov | Carousel | Know Your Power | They decide your hospital, your school and your job. Do you know who they are? | built | Claude | Spreadsheet carousel: why elections matter beyond election day |
+| 49 | Sat 28 Nov | Carousel | Know the Candidates | Meet the candidates 1 of 6 | built | Claude | Tickets AA, AAC, ADC. Same layout, party colours, INEC facts only |
+| 48 | Sun 29 Nov | Video | Know Your Power | Not your uncle's vote. Not your pastor's. Not your boss's. Yours. | built | Claude | Spreadsheet: your vote should be your decision |
+| 47 | Mon 30 Nov | Carousel | Vote Wisely | Popular is not the same as prepared. 5 checks before you choose. | built | Claude | Spreadsheet: five things to examine before choosing a candidate |
 | 46 | Tue 01 Dec | Single | Know Your Power | What matters most in a leader? Vote in our poll. | planned |  | Spreadsheet poll: integrity, competence, clear plans, accountability |
 | 45 | Wed 02 Dec | Carousel | Know the Candidates | Meet the candidates 2 of 6 | planned |  | Tickets ADP, APC, APM |
 | 44 | Thu 03 Dec | Carousel | Know Your Power | My vote does not count. The numbers say otherwise. | planned |  | whyvote objection. 2023 margin vs people who stayed home |

@@ -21,7 +21,7 @@ def candidate_slide(abbr, photo=None):
     p, vp = t["president"], t["vp"]
     return ("candidate", dict(
         kicker=f"On the ballot · President · Ticket {t['sn']}",
-        name=p["display"], party=f"{abbr} · {full}", colours=cols, party_ink=ink,
+        name=p["display"], party=f"{abbr} · {full}", abbr=abbr, colours=cols, party_ink=ink,
         photo=photo or f"{abbr.lower()}-president.png",
         facts=[("Age", str(p["age"])), ("Running mate", vp["display"]),
                ("Qualifications", p["qualifications"])],

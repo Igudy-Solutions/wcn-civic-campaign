@@ -37,7 +37,7 @@ SHEET = os.path.join(ROOT, "CONTENT_PLAN.csv")
 ELECTION = dt.date(2027, 1, 16)
 FIELDS = ["Day", "Post date", "Format", "Pillar", "Folder title",
           "Hook (cover title)", "Notes", "Status", "Owner"]
-FORMATS = {"carousel": "Carousel", "single": "Single", "c": "Carousel", "s": "Single"}
+FORMATS = {"carousel": "Carousel", "single": "Single", "video": "Video", "c": "Carousel", "s": "Single", "v": "Video"}
 STATUSES = ["planned", "writing", "built", "posted"]
 
 
@@ -68,7 +68,7 @@ def read_sheet():
         days.append(r["Day"])
         f = FORMATS.get(str(r["Format"]).strip().lower())
         if not f:
-            errors.append(f"Day {r['Day']}: Format must be Carousel or Single")
+            errors.append(f"Day {r['Day']}: Format must be Carousel, Single or Video")
         r["Format"] = f or r["Format"]
         s = str(r["Status"]).strip().lower() or "planned"
         if s not in STATUSES:

@@ -194,3 +194,19 @@ it here. Never edit the engine to make one post work.
 - One voice line per scene, said the way it should sound: INEC is "Eye-neck",
   PVC is "P V C". Never say "one post a day".
 - Scenes cross-fade softly. No shutters, no whoosh.
+
+
+## 12. Standalone countdown series (25 November 2026)
+
+David selected a separate simple countdown layout: flat Nigerian green
+`#017B4C`, large white lettering, small WCN logo top left, white social footer.
+For `countdowns/` only, this supersedes the photo-background requirement and
+cover-badge treatment above. There is no swipe hand on a standalone image.
+
+Use `countdowns/_tools/render.py` and the selected `green-white-v2` design.
+The renderer uses Sora-derived display instances with repaired Y/G joins;
+source font, licence and derivation notes are included. Keep the current
+exports as the visual reference and add future designs with distinct names.
+Dates and source checks live in each date's metadata. Countdown captions and
+alt text are separate text files. Do not mark anything published without
+confirmation. See `countdowns/README.md` for reproduction and handoff.

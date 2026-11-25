@@ -18,6 +18,7 @@ downsampled with Pillow, the same pipeline as Eden Centre and Ignovations.
 | `CONTENT_PLAN.csv` | **The plan sheet.** Which day carries which topic. Opens in Excel. Edit this. |
 | `CONTENT_PLAN.md` | Read-only view of the sheet, rebuilt by `tools/plan.py`. Do not edit. |
 | `CAMPAIGN_LOG.md` | Decisions, open questions, sources. |
+| `countdowns/` | 52 dated green/white countdowns (25 Nov–15 Jan), captions, alt text, gallery and reproducible renderer. Start with [the scheduling index](countdowns/SCHEDULING_INDEX.md). |
 | `templates/` | `TEMPLATES.md` and preview renders of each slide type. |
 | `tools/generate_carousel.py` | The engine. Shared by every day. |
 | `tools/day_NN.py` | One small file per day, words and photo names only. |

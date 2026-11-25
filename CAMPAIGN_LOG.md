@@ -2,6 +2,24 @@
 
 Newest first.
 
+## Wed 25 Nov 2026, standalone countdown series
+
+- David selected a simple green background, bold white countdown, small WCN
+  logo at top left, and a white footer with Instagram and X handles. This
+  countdown series deliberately uses no background photos or swipe indicator.
+- Added `countdowns/YYYY-MM-DD/` for every date from 25 Nov 2026 to 15 Jan
+  2027: 52 through 1 days before the 16 Jan election. PNGs are 1080x1350;
+  each folder also contains caption, alt text and production metadata.
+- Current design `green-white-v2`: Sora-derived display instances with merged
+  contours and cleaned Y/G joins, fixing the cracked-looking display lettering.
+  Original Sora font and licence are retained; adapted fonts are named WCN
+  Countdown. See `countdowns/_assets/static/FONT-NOTES.md`.
+- All 52 dates, dimensions, image hashes, gallery links and X caption lengths
+  checked. Final day says `DAY TO GO`. INEC calendar checked 25 Nov 2026.
+  Accuracy/visual review remains visible in metadata; nothing published.
+- Gallery: `countdowns/index.html`; scheduling index and simple tracker are in
+  the same folder. Existing daily content and publishing statuses are retained.
+
 ## Fri 20 Nov 2026, setup and Day 57
 
 - Arkcore: logo top left or right. Logo back, top left, on every slide; the

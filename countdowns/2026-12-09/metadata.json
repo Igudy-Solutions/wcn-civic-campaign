@@ -1,0 +1,25 @@
+{
+  "posting_date": "2026-12-09",
+  "timezone": "Africa/Lagos",
+  "election_date": "2027-01-16",
+  "days_remaining": 38,
+  "design_id": "green-white-v2",
+  "artwork": "green-white-v2.png",
+  "caption": "caption.txt",
+  "alt_text": "alt-text.txt",
+  "dimensions": [
+    1080,
+    1350
+  ],
+  "production_status": "rendered",
+  "review_status": "pending_team_review",
+  "published": false,
+  "date_source": "https://inecnigeria.org/elections/calendar",
+  "date_checked": "2026-11-25",
+  "pre_publication_checks": [
+    "Reconfirm INEC election date",
+    "Team accuracy and visual review"
+  ],
+  "artwork_sha256": "1768e4223b19e35b4afc4a5da344508da32aa02d31dbf01f3f80db52b9f6afa4",
+  "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+}

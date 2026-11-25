@@ -1,0 +1,11 @@
+{
+  "images": 52,
+  "dimensions": "1080 x 1350",
+  "font_repair": "Merged contours and smoothed ExtraBold Y/G display joins in Sora-derived instances",
+  "label_regions_updated": 52,
+  "dates_and_hashes": "all passed",
+  "gallery_links": "all point to existing corrected v2 assets",
+  "previous_exports": "52 archived with prior metadata",
+  "caption_lengths": "all below 280 characters",
+  "review": "full-size corrected label inspected; two-digit and single-digit layouts checked"
+}

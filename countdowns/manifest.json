@@ -1,0 +1,1308 @@
+{
+  "design_id": "green-white-v2",
+  "election_date": "2027-01-16",
+  "source_url": "https://inecnigeria.org/elections/calendar",
+  "date_checked": "2026-11-25",
+  "posts": [
+    {
+      "posting_date": "2026-11-25",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 52,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "824bf35126bb5b294dc111e10945b5cff7904f863204888c58b01b47cce1fe40",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-11-26",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 51,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "e3c0446c4278f652f162909e49f6e215dd774ddc2c286b5c59a36bae15402212",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-11-27",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 50,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "ba9b22e4be967677746be5fd60451b973920fdae3c7a64c72764ab0e4817fce4",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-11-28",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 49,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "3a0075ab7ae008c27ce69aab0e8907b39c03b5d1fbde16f8a43304ce6eff044a",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-11-29",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 48,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "1dd330e38fc1db474e08d7d57fe688439571d64f9045acb90787470e6517db78",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-11-30",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 47,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "ef29874b243a2f5deaab4c181595fc5fb9957f340e9a174c85b9e9e711af993c",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-12-01",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 46,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "730e2ece86dae1ee6bc4f1419694d457ba5567966688bd8888f10e57b205837e",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-12-02",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 45,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "2311e55c039455c7ab126bb1862d7234731f2de2b0747ada1ed977aa62b751f8",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-12-03",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 44,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "28514ee1955c710ee168a59228662e45ea2967db00125dca2c6492ce0eaf4f18",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-12-04",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 43,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "0fbcc6388e074ad6377b23d3928621ba541fd1b8cc72be4a0fec915ced4c1648",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-12-05",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 42,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "5fbf6788326b55b5a59fe75fc4756a7f26e8724350abe4ade1aeddcc6cb5bae3",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-12-06",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 41,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "2706677383854ae07a80b123a2e1c0966e184e7a48d4b2ae68dbf71a9da03c3c",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-12-07",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 40,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "fd9cb4b69128b4f2703c0fa73e421c7296d6425cfcf8a92af434ca35af31342a",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-12-08",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 39,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "87cd6a0703c74671aba1d786b937ffd063b73b66293a0ad1ccda85d81ca682f4",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-12-09",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 38,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "1768e4223b19e35b4afc4a5da344508da32aa02d31dbf01f3f80db52b9f6afa4",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-12-10",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 37,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "b1bd26d795c1860d795147f4176dddec0708ff5f2f4dd36d4e220c282ad268ea",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-12-11",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 36,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "99bd877a06086d82e48a7beba25a98892f7206ea149aff61e0803fe8088729a0",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-12-12",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 35,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "5c7463e48941dc284eba52a53b9a602c3e3e191797f88725eecc64b891caef62",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-12-13",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 34,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "469ca3e362d35b89f51fdd722bb189ebb287af407a8f4ccc4378c8b936409e0b",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-12-14",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 33,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "4dc93ce772a4a378f9469807cca141455d63a2abe89c35da86cb3381fefbbc0f",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-12-15",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 32,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "62eb3602d754c23c63b9b0bc94cd04a905760a3cb16a89861a46f32a67243635",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-12-16",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 31,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "31b45f9c875562c7adf5bbd76f1c9159d0b21ab47008eb350f38200a3b6c16b4",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-12-17",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 30,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "65555a1835925f02643bbad124812dbd2e0eb05cea2622c21323c9f6d5418e5c",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-12-18",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 29,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "9dfa41d4b8bae26f58418425862e569de622b4f73e12fbaf3b47686078b87869",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-12-19",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 28,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "1e0b2ee177696ac9bf50e1c959a300cecb4023c4611f8a60965ed25e20f2c532",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-12-20",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 27,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "86ed4f1f922ce6ca68ae5ef96d9d04b6772f7fbf8bf921f200dc8c95e8851aaf",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-12-21",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 26,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "5d5f6edb464e7c00b97a3dd66315271d73f7b017f4d31e1b9357656e5a9c3b20",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-12-22",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 25,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "8e2fdc2ac9d6cf40fbbd9f39ec158f9bc2f5c8bde64b057271afe82977faf2b0",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-12-23",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 24,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "219b2d6697695efa8d15a845416f33c07ded50bee432fe6b6c538b99b2d7beae",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-12-24",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 23,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "8df3b6336b38458213666bb4756759699ce464829879f5bdbe981396396a6827",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-12-25",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 22,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "11de80290b8b75fe909cae3822b0b676eb1e7c35ec3feb96edebccfb9b65d7a1",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-12-26",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 21,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "f0966500f1a30e36d57e2e6ef7b25cc402dd73c97ee9fb3a5d1fda610aa4eeb6",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-12-27",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 20,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "fea2683031823066985bb31a54ab0a2bdc279ce6b4ebe8327049437df8da4c1d",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-12-28",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 19,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "c7967246dc35d35e32ca72680fdc09ffcc4f125cc7dba5965ebcd799f73741a5",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-12-29",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 18,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "5b68f7c4093a5b607ab35c2a96c7711798b419a470eec0772698d77333a0fb47",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-12-30",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 17,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "8a244688e85c22173bbdb69c2ca5ac19e23ef8252ff6e81b64f1c0f479275423",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2026-12-31",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 16,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "99b037e6a443fb111a54c17c1699f1c87a8a07b60716cfaa18caa539532c6de3",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2027-01-01",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 15,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "0e649e4a79b1bc805151272cfabde0dcf3ab3a384f83eb82826f3f5103c9b978",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2027-01-02",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 14,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "c3c9e4493757cec9aa6ef3a707be91f65eeb08b34bbf02c6aa252117ac40205c",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2027-01-03",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 13,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "410412d4726945c1247254454bf2b4afe3634d21a8258d04652c9095722fa35a",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2027-01-04",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 12,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "1ea8c53bd9e4e26bcbab232bb7b06260c92ef3da4a90b61da2525523e00633e8",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2027-01-05",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 11,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "2da37e6aafc5b5a999b04d45bd7505a59addc13d3dbd6978415b4d8123abdba6",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2027-01-06",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 10,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "e8f76c0d3ea36d1f048dd47a0bc7d23bb3f9b278114bc50a3d990430b5fed772",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2027-01-07",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 9,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "91e4e3164d0ad0c44ff6ac10f7936ab6e3ec398136212331109b0a2891e78a5d",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2027-01-08",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 8,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "df210d11cc56700f5d74cc49dd1b0d2fcb15dcf0e3d12bd798a7920086ae851b",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2027-01-09",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 7,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "d92af62c149c588289588c4b513ee086ad1a23c1ecc3c1a1d48d3b3f1ed6a203",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2027-01-10",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 6,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "f62140f2e1382ea182f0ce715129f16512355ab1a4c1bd98855ec46b4523109b",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2027-01-11",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 5,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "d7afb8b203d4c881c97573173573f34c30d3b839c94a048daccd337e5fa518b5",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2027-01-12",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 4,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "ac02033b7dd821bc6c788309c001a7dc36d945a38f0201436879cd36ec356c01",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2027-01-13",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 3,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "481c7c3d18bcd303476e7e3d867f4256c08d357d62dc8bf23f80eb7fce0a9845",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2027-01-14",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 2,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "0d0b9efd1dffb6f1fcd2de7ab5dde2f5293bae0328f0eab47463afb175d0e47d",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    },
+    {
+      "posting_date": "2027-01-15",
+      "timezone": "Africa/Lagos",
+      "election_date": "2027-01-16",
+      "days_remaining": 1,
+      "design_id": "green-white-v2",
+      "artwork": "green-white-v2.png",
+      "caption": "caption.txt",
+      "alt_text": "alt-text.txt",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "production_status": "rendered",
+      "review_status": "pending_team_review",
+      "published": false,
+      "date_source": "https://inecnigeria.org/elections/calendar",
+      "date_checked": "2026-11-25",
+      "pre_publication_checks": [
+        "Reconfirm INEC election date",
+        "Team accuracy and visual review"
+      ],
+      "artwork_sha256": "38692996703576038eb495bcca1f8ad44fcd94becd47cffc4acdd18bb3513975",
+      "font_rendering": "Sora-derived static weights; merged contours and cleaned display Y/G joins"
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 # AI background prompts
 
+The full prompt text for every image is in `PROMPTS_GUIDE.md` at the repo root.
+
 Made in Figma (`generate_image`, model gpt-image-2.5-flare, 1080x1350 requested,
 1024x1280 delivered) on 20 Nov 2026, in the Figma file
 "WCN Civic Campaign - AI backgrounds". Every prompt ends with the same rules so

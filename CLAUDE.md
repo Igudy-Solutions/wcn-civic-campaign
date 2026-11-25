@@ -2,7 +2,7 @@
 
 Instructions for anyone working in this repo, person or AI assistant. Read
 this first, then `CAROUSEL_GUIDE.md` (the design and content rules) and
-`CAMPAIGN_LOG.md` (what was decided and why).
+`CAMPAIGN_LOG.md` (what was decided and why). `PROMPTS_GUIDE.md` has the exact image prompts and video scripts used so far.
 
 ## What this is
 

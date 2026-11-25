@@ -60,3 +60,5 @@ INEC's list only. Every number has a source in the day script and captions.md
 (not printed on the slide). WCN is not affiliated with whyvote.ng. Procedural
 claims (polling times, documents, ballot rules) are checked against INEC's
 latest guidance before posting.
+
+See `PROMPTS_GUIDE.md` for the exact image prompts, the video voice scripts and the prompts to give Claude.

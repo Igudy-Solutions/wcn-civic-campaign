@@ -368,7 +368,7 @@ def layout_pass(row):
 </div>"""
 
 
-SHADE = "#5E9A4A"   # lighter green for the hard shadows (Arkcore, 25 Nov)
+SHADE = FOREST   # hard shadows in brand forest only (Arkcore, 25 Nov: brand colours only)
 BRUTAL_CSS = """
 .nb{position:absolute;inset:0;color:%(F)s;background-color:#F5F8E4;
   background-image:linear-gradient(rgba(13,66,31,.07) 2px,transparent 2px),
@@ -413,7 +413,7 @@ def layout_brutal(row):
   background:url({photo_uri(row)}) {row.get('Photo position') or '50% 20%'}/cover no-repeat"></div>
 <div class="box" style="position:absolute;right:120px;top:{600+o+(0 if SQ else 120)}px;background:#fff;padding:12px 22px;
   transform:rotate(-2deg)">
-  <div style="font-size:15px;letter-spacing:.16em;font-weight:800;color:#6f7d14">SPEAKER</div>
+  <div style="font-size:15px;letter-spacing:.16em;font-weight:800;color:{FOREST};opacity:.75">SPEAKER</div>
   <div style="font-family:'Display';font-weight:800;font-size:32px;letter-spacing:-.02em">{g.esc(row['Host'])}</div>
   {f'<div style="font-size:19px;font-weight:700;opacity:.7">{g.esc(row.get("Also known as","").strip())}</div>' if row.get("Also known as","").strip() else ''}</div>
 <div class="box" style="position:absolute;right:400px;top:{130+o}px;width:136px;height:136px;border-radius:50%;

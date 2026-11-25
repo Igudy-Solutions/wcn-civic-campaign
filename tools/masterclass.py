@@ -86,7 +86,10 @@ h1 .acc{{color:{LIME}}}
 .info{{position:absolute;left:64px;right:64px;bottom:118px;display:grid;
   grid-template-columns:1.25fr 1fr 1fr;border-radius:26px;overflow:hidden;
   background:rgba(255,255,255,.07);border:1.5px solid rgba(255,255,255,.14)}}
-.info div{{padding:22px 26px;border-left:1.5px solid rgba(255,255,255,.12)}}
+.info .ic{{flex:none;display:flex;color:{LIME}}}
+.info div:first-child .ic{{color:{FOREST}}}
+.info .txt{{display:block}}
+.info div{{display:flex;align-items:center;gap:16px;padding:22px 22px;border-left:1.5px solid rgba(255,255,255,.12)}}
 .info div:first-child{{border-left:0;background:{LIME};color:{FOREST}}}
 .info small{{display:block;font-size:17px;letter-spacing:.14em;text-transform:uppercase;
   font-weight:700;opacity:.7;margin-bottom:6px}}
@@ -121,11 +124,24 @@ def learn_list(row):
 
 def info_bar(row):
     long, _, _ = nice_date(row["Date"])
-    def cell(label, val):
+    def cell(label, val, icon):
         v = f"<b>{g.esc(val)}</b>" if val else f'<b class="tbc">{TBC}</b>'
-        return f"<div><small>{label}</small>{v}</div>"
-    return ('<div class="info">' + cell("Date", long) + cell("Time", row.get("Time", "").strip())
-            + cell("Where", row.get("Platform", "").strip()) + "</div>")
+        return (f'<div><span class="ic">{ICONS[icon]}</span>'
+                f'<span class="txt"><small>{label}</small>{v}</span></div>')
+    return ('<div class="info">' + cell("Date", long, "date")
+            + cell("Time", row.get("Time", "").strip(), "time")
+            + cell("Where", row.get("Platform", "").strip(), "where") + "</div>")
+
+
+_SVG = ('<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" '
+        'stroke-width="2" stroke-linecap="round" stroke-linejoin="round">{}</svg>')
+ICONS = {
+    "date": _SVG.format('<rect x="3" y="4.5" width="18" height="16.5" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/>'
+                        '<circle cx="8" cy="14" r=".9" fill="currentColor"/><circle cx="12" cy="14" r=".9" fill="currentColor"/>'
+                        '<circle cx="16" cy="14" r=".9" fill="currentColor"/>'),
+    "time": _SVG.format('<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/>'),
+    "where": _SVG.format('<path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.6"/>'),
+}
 
 
 def foot():
@@ -234,6 +250,8 @@ PASS_CSS = f"""
 .light .info{{background:#fff;border-color:rgba(13,66,31,.12);box-shadow:0 16px 40px rgba(13,66,31,.10)}}
 .light .info div{{border-left-color:rgba(13,66,31,.1)}}
 .light .info div:first-child{{background:{FOREST};color:#fff}}
+.light .info .ic{{color:{FOREST}}}
+.light .info div:first-child .ic{{color:{LIME}}}
 .light .info .tbc{{color:rgba(13,66,31,.5)}}
 .light .foot{{color:{FOREST}}}
 .light .foot .free{{color:{FOREST}}}

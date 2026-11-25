@@ -33,7 +33,7 @@ ROOT = g.ROOT
 SHEET = os.path.join(ROOT, "Masterclass", "schedule.csv")
 OUT_DIR = os.path.join(ROOT, "Masterclass")
 HOST_DIR = os.path.join(ROOT, "images", "hosts")
-LAYOUTS = ("arch", "card", "pass")
+LAYOUTS = ("pass", "stamp", "bold")
 
 LIME, FOREST, INK = g.ACCENT, g.FOREST, g.INK
 TBC = "To be announced"
@@ -174,62 +174,109 @@ def title_size(title, base, long_at=30):
 
 
 # ------------------------------------------------------------------ layouts
-def layout_arch(row):
-    t = row["Title"]
-    fs = title_size(t, 80)
-    sub = row.get("Subtitle", "").strip()
-    inner = f"""
-<div class="ring" style="width:860px;height:860px;right:-280px;top:150px"></div>
-<div class="ring" style="width:640px;height:640px;right:-170px;top:260px;border-style:dashed"></div>
-{top()}
-<div class="photo" style="right:64px;top:180px;width:470px;height:780px;
-  border-radius:235px 235px 28px 28px;background-image:url({photo_uri(row)});
-  background-position:{row.get('Photo position') or '50% 20%'};border:6px solid {LIME}"></div>
-<div style="position:absolute;right:40px;top:900px;width:518px;background:{LIME};color:{FOREST};
-  border-radius:20px;padding:18px 24px;box-shadow:0 18px 40px rgba(0,0,0,.35)">
-  <div class="role">SPEAKER</div>
-  <div class="name" style="font-size:30px;color:{FOREST}">{host_line(row)}</div>
-</div>
-<div style="position:absolute;left:64px;top:330px;width:480px">
-  <div class="kicker" style="margin-bottom:22px">Masterclass · {nice_date(row['Date'])[1]} {nice_date(row['Date'])[2]}</div>
-  <h1 style="font-size:{fs}px">{headline(t)}</h1>
-  {f'<p class="sub" style="font-size:30px;margin-top:22px">{g.esc(sub)}</p>' if sub else ''}
-</div>
-<div style="position:absolute;left:64px;top:880px;right:64px">{learn_list(row)}</div>
-{info_bar(row)}
-{foot()}
-"""
-    return inner
+def kicker_date(row):
+    _, d, m = nice_date(row["Date"])
+    return f"{d} {m}"
 
 
-def layout_card(row):
+def socials_foot(color, right="SAVE THE DATE"):
+    ig = g.IG_ICON.format(c=color)
+    x = g.X_ICON.format(c=color)
+    return (f'<div class="foot" style="color:{color}"><div><span class="soc">{ig}{g.esc(g.IG_HANDLE)}</span>'
+            f'<span class="soc">{x}{g.esc(g.X_HANDLE)}</span></div>'
+            f'<span class="free" style="color:{color}">{right}</span></div>')
+
+
+def logo_file(name):
+    p = os.path.join(g.ASSET_DIR, "logo", name)
+    return p if os.path.exists(p) else g.LOGO
+
+
+STAMP_CSS = """
+.stamp{position:absolute;padding:16px;background:%(F)s;
+  -webkit-mask:radial-gradient(circle 9px,#0000 98%%,#000) -14px -14px/28px 28px round,
+               linear-gradient(#000 0 0) content-box;
+  -webkit-mask-composite:source-over}
+.stamp .in{width:100%%;height:100%%;background:#fff;padding:12px}
+.stamp .ph{width:100%%;height:100%%;background-size:cover;background-repeat:no-repeat}
+.swoosh{position:absolute;left:-14px;right:-14px;bottom:-12px;height:26px}
+""" % dict(F=FOREST)
+
+
+def layout_stamp(row):
+    """Light, centred title on top, the host photo as a postage stamp."""
     t = row["Title"]
     sub = row.get("Subtitle", "").strip()
-    _, day, mon = nice_date(row["Date"])
-    fs = title_size(t, 70)
-    inner = f"""
-{top()}
-<div class="photo" style="left:64px;right:64px;top:150px;height:660px;border-radius:32px;
-  background-image:url({photo_uri(row)});background-position:{row.get('Photo position') or '50% 22%'}"></div>
-<div style="position:absolute;left:64px;right:64px;top:150px;height:660px;border-radius:32px;
-  background:linear-gradient(180deg,transparent 60%,rgba(6,18,10,.75) 100%)"></div>
-<div style="position:absolute;right:96px;top:120px;width:150px;height:150px;border-radius:50%;
-  background:{LIME};color:{FOREST};display:flex;flex-direction:column;align-items:center;
-  justify-content:center;box-shadow:0 16px 40px rgba(0,0,0,.4);border:6px solid {FOREST}">
-  <span style="font-family:'Display';font-weight:800;font-size:58px;line-height:1">{day}</span>
-  <span style="font-weight:700;font-size:22px;letter-spacing:.14em">{mon}</span></div>
-<div style="position:absolute;left:96px;top:732px">
-  <div style="font-size:18px;letter-spacing:.16em;font-weight:700;color:{LIME}">SPEAKER</div>
-  <div class="name">{host_line(row)}</div></div>
-<div style="position:absolute;left:64px;right:64px;top:860px">
-  <h1 style="font-size:{fs}px">{headline(t)}</h1>
-  {f'<p class="sub" style="font-size:29px;margin-top:14px">{g.esc(sub)}</p>' if sub else ''}
+    fs = title_size(t, 74)
+    return f"""<style>{PASS_CSS}{STAMP_CSS}</style><div class="light">
+<div class="top"><img src="{g.data_uri(logo_file('wcn-horizontal-lime-green.png'))}" style="filter:none"/>
+  <span class="pill">Monthly Masterclass</span></div>
+<div style="position:absolute;left:64px;right:64px;top:190px;text-align:center">
+  <h1 style="font-size:{fs}px;line-height:1.1">{headline(t)}</h1>
+  {f'<p class="sub" style="font-size:31px;margin-top:22px;font-style:italic;font-weight:500">{g.esc(sub)}</p>' if sub else ''}
 </div>
-<div style="position:absolute;left:64px;right:64px;top:{960 if sub else 910}px">{learn_list(row).replace('<h3>What you will learn</h3>', '')}</div>
+<div class="stamp" style="left:300px;top:{450 if sub else 400}px;width:480px;height:580px;transform:rotate(-3deg);
+  filter:drop-shadow(0 24px 40px rgba(13,66,31,.25))">
+  <div class="in"><div class="ph" style="background-image:url({photo_uri(row)});
+    background-position:{row.get('Photo position') or '50% 20%'}"></div></div></div>
+<div style="position:absolute;left:560px;top:{900 if sub else 850}px;background:{FOREST};color:#fff;border-radius:18px;
+  padding:16px 26px;transform:rotate(-3deg);box-shadow:0 14px 30px rgba(13,66,31,.3)">
+  <div style="font-size:16px;letter-spacing:.16em;font-weight:700;color:{LIME}">SPEAKER</div>
+  <div style="font-family:'Display';font-weight:800;font-size:38px;letter-spacing:-.02em">{g.esc(row['Host'])}</div></div>
+<div style="position:absolute;left:150px;top:{560 if sub else 510}px;width:170px;height:170px;border-radius:50%;
+  background:{LIME};color:{FOREST};display:flex;flex-direction:column;align-items:center;justify-content:center;
+  transform:rotate(-10deg);box-shadow:0 14px 30px rgba(13,66,31,.25);z-index:3">
+  <span style="font-family:'Display';font-weight:800;font-size:60px;line-height:1">{nice_date(row['Date'])[1]}</span>
+  <span style="font-weight:800;font-size:24px;letter-spacing:.14em">{nice_date(row['Date'])[2]}</span></div>
 {info_bar(row)}
-{foot()}
-"""
-    return inner
+{socials_foot(FOREST)}
+</div>"""
+
+
+BOLD_CSS = """
+.lime{position:absolute;inset:0;color:%(F)s;
+  background:radial-gradient(800px 700px at 100%% 0%%,#EEF58A 0%%,transparent 60%%),
+             linear-gradient(170deg,%(L)s 0%%,#C3D01C 100%%)}
+.lime .big{font-family:'Display';font-weight:800;font-size:116px;letter-spacing:-.05em;line-height:.9;color:%(F)s}
+.lime .ghost{position:absolute;left:-20px;right:-20px;bottom:250px;font-family:'Display';font-weight:800;
+  font-size:300px;letter-spacing:-.06em;color:transparent;-webkit-text-stroke:2px rgba(13,66,31,.12);
+  white-space:nowrap;line-height:1}
+.lime h1{color:%(F)s}
+.lime h1 .acc{color:#fff;background:%(F)s;padding:0 12px;border-radius:10px;-webkit-box-decoration-break:clone}
+.lime .sub{color:rgba(13,66,31,.85)}
+.lime .info{background:%(F)s;border:0;box-shadow:0 18px 40px rgba(13,66,31,.25)}
+.lime .info div{border-left-color:rgba(255,255,255,.12);color:#fff}
+.lime .info div:first-child{background:#fff;color:%(F)s}
+.lime .info .ic{color:%(L)s}
+.lime .info div:first-child .ic{color:%(F)s}
+""" % dict(F=FOREST, L=LIME)
+
+
+def layout_bold(row):
+    """Lime, MASTERCLASS in giant type, photo with a forest offset block."""
+    t = row["Title"]
+    sub = row.get("Subtitle", "").strip()
+    fs = title_size(t, 60)
+    return f"""<style>{BOLD_CSS}</style><div class="lime">
+<div class="ghost">MASTERCLASS</div>
+<div class="top"><img src="{g.data_uri(logo_file('wcn-horizontal-forest.png'))}" style="filter:none"/>
+  <span class="pill" style="border-color:{FOREST};color:{FOREST}">{kicker_date(row)}</span></div>
+<div style="position:absolute;left:64px;right:64px;top:170px">
+  <div style="font-weight:700;font-size:26px;letter-spacing:.2em;margin-bottom:8px">MONTHLY</div>
+  <div class="big">MASTERCLASS</div></div>
+<div style="position:absolute;left:84px;top:{430}px;width:430px;height:560px;border-radius:28px;background:{FOREST}"></div>
+<div style="position:absolute;left:64px;top:410px;width:430px;height:560px;border-radius:28px;
+  background:url({photo_uri(row)}) {row.get('Photo position') or '50% 20%'}/cover no-repeat;border:5px solid {FOREST}"></div>
+<div style="position:absolute;left:560px;right:64px;top:420px">
+  <h1 style="font-size:{fs}px;line-height:1.12">{headline(t)}</h1>
+  {f'<p class="sub" style="font-size:27px;margin-top:20px">{g.esc(sub)}</p>' if sub else ''}
+  <div style="margin-top:38px;border-top:3px solid {FOREST};padding-top:18px">
+    <div style="font-size:17px;letter-spacing:.16em;font-weight:700;opacity:.7">SPEAKER</div>
+    <div style="font-family:'Display';font-weight:800;font-size:44px;letter-spacing:-.02em">{g.esc(row['Host'])}</div></div>
+</div>
+{info_bar(row)}
+{socials_foot(FOREST)}
+</div>"""
 
 
 PASS_CSS = f"""
@@ -296,7 +343,7 @@ def layout_pass(row):
 </div>"""
 
 
-BUILDERS = {"arch": layout_arch, "card": layout_card, "pass": layout_pass}
+BUILDERS = {"pass": layout_pass, "stamp": layout_stamp, "bold": layout_bold}
 
 
 def html(row, layout):

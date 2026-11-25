@@ -30,13 +30,14 @@ A row with no Title is skipped.
 
 ```bash
 python3 tools/masterclass.py 2026-11-27                 # all three layouts
-python3 tools/masterclass.py 2026-12-18 --layout arch   # one layout
+python3 tools/masterclass.py 2026-12-18 --layout pass   # one layout
 python3 tools/masterclass.py --all                      # every titled row
 ```
 
-Three layouts: `arch` (dark, text left, photo in a tall lime-edged arch),
-`card` (dark, photo in a wide card on top with a date badge) and `pass`
-(light, photo on a WCN speaker pass hanging from a lanyard).
+Three layouts. `pass` is the chosen one (Arkcore, 25 Nov): light, photo on a WCN
+speaker pass hanging from a lanyard. Options: `stamp` (light, centred title, photo
+as a postage stamp with a date sticker) and `bold` (lime, giant MASTERCLASS, photo
+with a forest offset block). The dark `arch` and `card` layouts were dropped.
 Needs Google Chrome, Python 3 and Pillow, like the rest of the repo.
 
 ## Hosts on file

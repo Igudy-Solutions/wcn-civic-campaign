@@ -29,7 +29,7 @@ A row with no Title is skipped.
 ## Render
 
 ```bash
-python3 tools/masterclass.py 2026-11-27                 # both layouts
+python3 tools/masterclass.py 2026-11-27                 # all three layouts
 python3 tools/masterclass.py 2026-12-18 --layout arch   # one layout
 python3 tools/masterclass.py --all                      # every titled row
 ```

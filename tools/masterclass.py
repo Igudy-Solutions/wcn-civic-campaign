@@ -316,7 +316,7 @@ def layout_pass(row):
     sub = row.get("Subtitle", "").strip()
     fs = title_size(t, 64 if SQ else 70)
     # square / portrait geometry
-    txt_top, lan_h, card_top, card_h, ph_h, name_fs = ((250, 160, 140, 610, 425, 34) if SQ
+    txt_top, lan_h, card_top, card_h, ph_h, name_fs = ((250, 160, 140, 610, 425, 31) if SQ
                                                         else (420, 250, 230, 760, 480, 38))
     first = g.esc(row["Host"].split()[0])
     aka = g.esc((row.get("Also known as") or "").strip())
@@ -340,9 +340,9 @@ def layout_pass(row):
   <div style="margin-top:18px;font-size:15px;letter-spacing:.16em;font-weight:700;color:#7d8a2a">SPEAKER</div>
   <div style="font-family:'Display';font-weight:800;font-size:{name_fs}px;color:{FOREST};letter-spacing:-.02em;line-height:1.1">{g.esc(row['Host'])}</div>
   {f'<div style="font-size:19px;font-weight:600;color:rgba(13,66,31,.7);margin-top:4px">aka {aka}</div>' if aka else ''}
-  <div style="position:absolute;right:22px;bottom:22px;width:62px;height:62px;border-radius:50%;
+  <div style="position:absolute;right:22px;top:18px;width:52px;height:52px;border-radius:50%;
     background:{LIME};display:flex;align-items:center;justify-content:center">
-    <img src="{g.data_uri(os.path.join(g.ASSET_DIR, 'logo', 'wcn-mark-black.png'))}" style="width:40px;opacity:.85"/></div>
+    <img src="{g.data_uri(os.path.join(g.ASSET_DIR, 'logo', 'wcn-mark-black.png'))}" style="width:34px;opacity:.85"/></div>
 </div>
 <div style="position:absolute;left:64px;right:64px;top:{850 if sub else 800}px">{learn_list(row)}</div>
 {info_bar(row)}

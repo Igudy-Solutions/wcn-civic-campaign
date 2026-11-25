@@ -35,7 +35,8 @@ OUT_DIR = os.path.join(ROOT, "Masterclass")
 HOST_DIR = os.path.join(ROOT, "images", "hosts")
 LAYOUTS = ("pass", "stamp", "bold", "brutal")
 # Arkcore (25 Nov): square 1080x1080 by default, the details are short.
-# --portrait gives 1080x1350. Only `pass` has a square version so far.
+# --portrait gives 1080x1350. `brutal` (neubrutalism) is the chosen look; `pass`
+# also has a square version (--layout pass).
 SIZE = "portrait" if "--portrait" in sys.argv else "square"
 SQ = SIZE == "square"
 H = 1080 if SQ else 1350
@@ -112,9 +113,14 @@ TICK = (f'<span class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fil
         f'<path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>')
 
 
-def headline(title):
-    """Last word or two of the title in lime."""
-    words = g.esc(title).split()
+def headline(title, mark=""):
+    """Put `mark` (the sheet's Highlight column) in the lime box; if it is blank,
+    the last word or two of the title."""
+    t = g.esc(title)
+    mark = g.esc((mark or "").strip())
+    if mark and mark in t:
+        return t.replace(mark, f'<span class="acc">{mark}</span>', 1)
+    words = t.split()
     n = 1 if len(words) <= 3 else 2
     return " ".join(words[:-n]) + f' <span class="acc">{" ".join(words[-n:])}</span>'
 
@@ -224,7 +230,7 @@ def layout_stamp(row):
 <div class="top"><img src="{g.data_uri(logo_file('wcn-horizontal-lime-green.png'))}" style="filter:none"/>
   <span class="pill">Monthly Masterclass</span></div>
 <div style="position:absolute;left:64px;right:64px;top:190px;text-align:center">
-  <h1 style="font-size:{fs}px;line-height:1.1">{headline(t)}</h1>
+  <h1 style="font-size:{fs}px;line-height:1.1">{headline(t, row.get("Highlight", ""))}</h1>
   {f'<p class="sub" style="font-size:31px;margin-top:22px;font-style:italic;font-weight:500">{g.esc(sub)}</p>' if sub else ''}
 </div>
 <div class="stamp" style="left:300px;top:{450 if sub else 400}px;width:480px;height:580px;transform:rotate(-3deg);
@@ -280,7 +286,7 @@ def layout_bold(row):
 <div style="position:absolute;left:64px;top:410px;width:430px;height:560px;border-radius:28px;
   background:url({photo_uri(row)}) {row.get('Photo position') or '50% 20%'}/cover no-repeat;border:5px solid {FOREST}"></div>
 <div style="position:absolute;left:560px;right:64px;top:420px">
-  <h1 style="font-size:{fs}px;line-height:1.12">{headline(t)}</h1>
+  <h1 style="font-size:{fs}px;line-height:1.12">{headline(t, row.get("Highlight", ""))}</h1>
   {f'<p class="sub" style="font-size:27px;margin-top:20px">{g.esc(sub)}</p>' if sub else ''}
   <div style="margin-top:38px;border-top:3px solid {FOREST};padding-top:18px">
     <div style="font-size:17px;letter-spacing:.16em;font-weight:700;opacity:.7">SPEAKER</div>
@@ -335,7 +341,7 @@ def layout_pass(row):
 <div class="top"><img src="{g.data_uri(logo)}" style="filter:none"/></div>
 <div style="position:absolute;left:64px;top:{txt_top}px;width:540px">
   <div class="kicker" style="margin-bottom:20px">Monthly Masterclass · {nice_date(row['Date'])[1]} {nice_date(row['Date'])[2]}</div>
-  <h1 style="font-size:{fs}px;line-height:1.12">{headline(t)}</h1>
+  <h1 style="font-size:{fs}px;line-height:1.12">{headline(t, row.get("Highlight", ""))}</h1>
   {f'<p class="sub" style="font-size:28px;margin-top:20px">{g.esc(sub)}</p>' if sub else ''}
 </div>
 <div style="position:absolute;right:205px;top:0;width:56px;height:{lan_h}px;background:{FOREST};
@@ -394,8 +400,8 @@ def layout_brutal(row):
 <div class="top"><img src="{g.data_uri(logo_file('wcn-horizontal-lime-green.png'))}" style="filter:none"/>
   <span class="box" style="background:{LIME};padding:12px 22px;font-weight:800;font-size:20px;letter-spacing:.14em;
    box-shadow:6px 6px 0 {SHADE};border-radius:999px">MONTHLY MASTERCLASS</span></div>
-<div style="position:absolute;left:64px;top:{230+o}px;width:520px">
-  <h1 style="font-size:{fs}px">{headline(t)}</h1>
+<div style="position:absolute;left:64px;top:{(230 if sub else 290)+o}px;width:{520 if len(t) <= 30 else 470}px">
+  <h1 style="font-size:{fs}px">{headline(t, row.get("Highlight", ""))}</h1>
   {f'<div class="box" style="display:inline-block;margin-top:34px;background:#fff;padding:14px 20px;font-size:25px;font-weight:700;box-shadow:6px 6px 0 {SHADE}">{g.esc(sub)}</div>' if sub else ''}
 </div>
 <div class="box" style="position:absolute;right:76px;top:{160+o}px;width:390px;height:{500 if SQ else 620}px;
@@ -405,7 +411,7 @@ def layout_brutal(row):
   transform:rotate(-2deg)">
   <div style="font-size:15px;letter-spacing:.16em;font-weight:800;color:#6f7d14">SPEAKER</div>
   <div style="font-family:'Display';font-weight:800;font-size:32px;letter-spacing:-.02em">{g.esc(row['Host'])}</div>
-  {f'<div style="font-size:19px;font-weight:700;opacity:.7">aka {g.esc(row.get("Also known as","").strip())}</div>' if row.get("Also known as","").strip() else ''}</div>
+  {f'<div style="font-size:19px;font-weight:700;opacity:.7">{g.esc(row.get("Also known as","").strip())}</div>' if row.get("Also known as","").strip() else ''}</div>
 <div class="box" style="position:absolute;right:400px;top:{130+o}px;width:136px;height:136px;border-radius:50%;
   background:{LIME};display:flex;flex-direction:column;align-items:center;justify-content:center;
   transform:rotate(-12deg);box-shadow:7px 7px 0 {SHADE};z-index:3">
@@ -441,7 +447,7 @@ def build(row, layouts):
 
 
 def main(argv):
-    layouts = ("pass", "brutal") if SQ else LAYOUTS
+    layouts = ("brutal",) if SQ else LAYOUTS
     if "--layout" in argv:
         layouts = (argv[argv.index("--layout") + 1],)
     rows = load()

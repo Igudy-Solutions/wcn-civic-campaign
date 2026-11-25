@@ -389,7 +389,7 @@ def layout_brutal(row):
     """Neubrutalism: thick forest borders, hard offset shadows, lime stickers."""
     t = row["Title"]
     sub = row.get("Subtitle", "").strip()
-    fs = title_size(t, 66 if SQ else 72)
+    fs = 86 if len(t) <= 20 else title_size(t, 66 if SQ else 72)
     _, day, mon = nice_date(row["Date"])
     long = nice_date(row["Date"])[0]
     o = 0 if SQ else 140          # push things down on portrait

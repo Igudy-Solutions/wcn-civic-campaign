@@ -384,10 +384,10 @@ def layout_brutal(row):
     o = 0 if SQ else 140          # push things down on portrait
     ig = circ(g.IG_ICON.format(c=LIME))
     x = circ(g.X_ICON.format(c=LIME))
-    def cell(left, width, icon, label, val, bg="#fff", fg=FOREST, icol=FOREST):
+    def cell(left, width, icon, label, val, bg="#fff", fg=FOREST, icol=FOREST, shadow=FOREST):
         v = g.esc(val) if val else TBC
         return (f'<div class="cell box" style="left:{left}px;top:{H-245}px;width:{width}px;height:104px;'
-                f'background:{bg};color:{fg}"><span class="ic" style="color:{icol}">{ICONS[icon]}</span>'
+                f'background:{bg};color:{fg};box-shadow:10px 10px 0 {shadow}"><span class="ic" style="color:{icol}">{ICONS[icon]}</span>'
                 f'<span><small>{label}</small><b>{v}</b></span></div>')
     return f"""<style>{BRUTAL_CSS}</style><div class="nb">
 <div class="top"><img src="{g.data_uri(logo_file('wcn-horizontal-lime-green.png'))}" style="filter:none"/>
@@ -410,7 +410,7 @@ def layout_brutal(row):
   transform:rotate(-12deg);box-shadow:7px 7px 0 {FOREST};z-index:3">
   <span style="font-family:'Display';font-weight:800;font-size:52px;line-height:1">{day}</span>
   <span style="font-weight:800;font-size:21px;letter-spacing:.14em">{mon}</span></div>
-{cell(64, 330, "date", "Date", long, bg=FOREST, fg="#fff", icol=LIME)}
+{cell(64, 330, "date", "Date", long, bg=FOREST, fg="#fff", icol=LIME, shadow=LIME)}
 {cell(420, 250, "time", "Time", row.get("Time", "").strip())}
 {cell(696, 320, "where", "Where", row.get("Platform", "").strip(), bg=LIME)}
 <div class="foot"><div><span class="soc">{ig}{g.esc(g.IG_HANDLE)}</span>

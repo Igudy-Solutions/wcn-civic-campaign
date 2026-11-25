@@ -358,20 +358,21 @@ def layout_pass(row):
 </div>"""
 
 
+SHADE = "#5E9A4A"   # lighter green for the hard shadows (Arkcore, 25 Nov)
 BRUTAL_CSS = """
 .nb{position:absolute;inset:0;color:%(F)s;background-color:#F5F8E4;
   background-image:linear-gradient(rgba(13,66,31,.07) 2px,transparent 2px),
                    linear-gradient(90deg,rgba(13,66,31,.07) 2px,transparent 2px);
   background-size:54px 54px}
-.nb .box{border:5px solid %(F)s;box-shadow:10px 10px 0 %(F)s;border-radius:18px}
+.nb .box{border:5px solid %(F)s;box-shadow:10px 10px 0 %(S)s;border-radius:18px}
 .nb h1{color:%(F)s;line-height:1.08}
-.nb h1 .acc{display:inline-block;color:%(F)s;background:%(L)s;border:5px solid %(F)s;box-shadow:8px 8px 0 %(F)s;
+.nb h1 .acc{display:inline-block;color:%(F)s;background:%(L)s;border:5px solid %(F)s;box-shadow:8px 8px 0 %(S)s;
   border-radius:14px;padding:0 16px;transform:rotate(-2deg);margin-top:10px}
 .nb .cell{position:absolute;background:#fff;display:flex;align-items:center;gap:16px;padding:0 22px}
 .nb .cell small{display:block;font-size:16px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;opacity:.65}
 .nb .cell b{font-size:25px;font-weight:800;letter-spacing:-.01em}
 .nb .cell .ic{display:flex}
-""" % dict(F=FOREST, L=LIME)
+""" % dict(F=FOREST, L=LIME, S=SHADE)
 
 
 def layout_brutal(row):
@@ -384,7 +385,7 @@ def layout_brutal(row):
     o = 0 if SQ else 140          # push things down on portrait
     ig = circ(g.IG_ICON.format(c=LIME))
     x = circ(g.X_ICON.format(c=LIME))
-    def cell(left, width, icon, label, val, bg="#fff", fg=FOREST, icol=FOREST, shadow=FOREST):
+    def cell(left, width, icon, label, val, bg="#fff", fg=FOREST, icol=FOREST, shadow=SHADE):
         v = g.esc(val) if val else TBC
         return (f'<div class="cell box" style="left:{left}px;top:{H-245}px;width:{width}px;height:104px;'
                 f'background:{bg};color:{fg};box-shadow:10px 10px 0 {shadow}"><span class="ic" style="color:{icol}">{ICONS[icon]}</span>'
@@ -392,13 +393,13 @@ def layout_brutal(row):
     return f"""<style>{BRUTAL_CSS}</style><div class="nb">
 <div class="top"><img src="{g.data_uri(logo_file('wcn-horizontal-lime-green.png'))}" style="filter:none"/>
   <span class="box" style="background:{LIME};padding:12px 22px;font-weight:800;font-size:20px;letter-spacing:.14em;
-   box-shadow:6px 6px 0 {FOREST};border-radius:999px">MONTHLY MASTERCLASS</span></div>
+   box-shadow:6px 6px 0 {SHADE};border-radius:999px">MONTHLY MASTERCLASS</span></div>
 <div style="position:absolute;left:64px;top:{230+o}px;width:520px">
   <h1 style="font-size:{fs}px">{headline(t)}</h1>
-  {f'<div class="box" style="display:inline-block;margin-top:34px;background:#fff;padding:14px 20px;font-size:25px;font-weight:700;box-shadow:6px 6px 0 {FOREST}">{g.esc(sub)}</div>' if sub else ''}
+  {f'<div class="box" style="display:inline-block;margin-top:34px;background:#fff;padding:14px 20px;font-size:25px;font-weight:700;box-shadow:6px 6px 0 {SHADE}">{g.esc(sub)}</div>' if sub else ''}
 </div>
 <div class="box" style="position:absolute;right:76px;top:{160+o}px;width:390px;height:{500 if SQ else 620}px;
-  transform:rotate(2.5deg);box-shadow:16px 16px 0 #5E9A4A;
+  transform:rotate(2.5deg);box-shadow:16px 16px 0 {SHADE};
   background:url({photo_uri(row)}) {row.get('Photo position') or '50% 20%'}/cover no-repeat"></div>
 <div class="box" style="position:absolute;right:120px;top:{600+o+(0 if SQ else 120)}px;background:#fff;padding:12px 22px;
   transform:rotate(-2deg)">
@@ -407,7 +408,7 @@ def layout_brutal(row):
   {f'<div style="font-size:19px;font-weight:700;opacity:.7">aka {g.esc(row.get("Also known as","").strip())}</div>' if row.get("Also known as","").strip() else ''}</div>
 <div class="box" style="position:absolute;right:400px;top:{130+o}px;width:136px;height:136px;border-radius:50%;
   background:{LIME};display:flex;flex-direction:column;align-items:center;justify-content:center;
-  transform:rotate(-12deg);box-shadow:7px 7px 0 {FOREST};z-index:3">
+  transform:rotate(-12deg);box-shadow:7px 7px 0 {SHADE};z-index:3">
   <span style="font-family:'Display';font-weight:800;font-size:52px;line-height:1">{day}</span>
   <span style="font-weight:800;font-size:21px;letter-spacing:.14em">{mon}</span></div>
 {cell(64, 330, "date", "Date", long, bg=FOREST, fg="#fff", icol=LIME, shadow=LIME)}

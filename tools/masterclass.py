@@ -52,7 +52,11 @@ def load():
 
 def nice_date(iso):
     d = dt.date.fromisoformat(iso)
-    return d.strftime("%a %-d %b %Y"), d.strftime("%-d"), d.strftime("%b").upper()
+    n = d.day
+    suf = "th" if 11 <= n % 100 <= 13 else {1: "st", 2: "nd", 3: "rd"}.get(n % 10, "th")
+    # Arkcore (25 Nov): "27th Nov. 2026" (May has no dot, it is not shortened)
+    mon = d.strftime("%b") + ("" if d.month == 5 else ".")
+    return f"{n}{suf} {mon} {d.year}", d.strftime("%-d"), d.strftime("%b").upper()
 
 
 def css():

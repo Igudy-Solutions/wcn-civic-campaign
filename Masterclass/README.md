@@ -9,6 +9,7 @@ Each session gets a square Instagram flyer (1080x1080, Arkcore 25 Nov; `--portra
 | `Masterclass/schedule.csv` | **The schedule.** One row per session. Edit this, not the script |
 | `images/hosts/` | Every host's studio photo, used as supplied (background kept) |
 | `tools/masterclass.py` | The template. Renders a row into `Masterclass/<date> - <Host>/` |
+| `Masterclass/<date> - <Host>/` | `flyer-brutal.png` (what we post) and `captions.md` (Instagram and X captions) |
 
 ## Schedule columns
 

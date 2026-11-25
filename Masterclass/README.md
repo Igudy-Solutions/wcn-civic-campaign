@@ -19,7 +19,7 @@ Each session gets an Instagram portrait flyer (1080x1350) in WCN brand
 | Subtitle | Optional second line under the title |
 | Host / Also known as | Full name, and a nickname shown in brackets |
 | Photo | File name in `images/hosts/` |
-| What you will learn | Up to three points, separated by `|` |
+| What you will learn | Optional, up to three points separated by `\|`. Arkcore (25 Nov): leave blank, no learn list on flyers |
 | Time / Platform | Leave blank and the flyer says "To be announced" |
 | Photo position | Optional CSS crop, e.g. `50% 15%`, if a face is cut off |
 | Status | `planned`, `draft`, `approved`, `posted` |

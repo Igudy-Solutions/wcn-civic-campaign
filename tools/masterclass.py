@@ -160,21 +160,21 @@ def title_size(title, base, long_at=30):
 # ------------------------------------------------------------------ layouts
 def layout_arch(row):
     t = row["Title"]
-    fs = title_size(t, 78)
+    fs = title_size(t, 80)
     sub = row.get("Subtitle", "").strip()
     inner = f"""
-<div class="ring" style="width:760px;height:760px;right:-260px;top:120px"></div>
-<div class="ring" style="width:560px;height:560px;right:-160px;top:220px;border-style:dashed"></div>
+<div class="ring" style="width:860px;height:860px;right:-280px;top:150px"></div>
+<div class="ring" style="width:640px;height:640px;right:-170px;top:260px;border-style:dashed"></div>
 {top()}
-<div class="photo" style="right:64px;top:168px;width:430px;height:620px;
-  border-radius:215px 215px 28px 28px;background-image:url({photo_uri(row)});
+<div class="photo" style="right:64px;top:180px;width:470px;height:780px;
+  border-radius:235px 235px 28px 28px;background-image:url({photo_uri(row)});
   background-position:{row.get('Photo position') or '50% 20%'};border:6px solid {LIME}"></div>
-<div style="position:absolute;right:40px;top:740px;width:478px;background:{LIME};color:{FOREST};
+<div style="position:absolute;right:40px;top:900px;width:518px;background:{LIME};color:{FOREST};
   border-radius:20px;padding:18px 24px;box-shadow:0 18px 40px rgba(0,0,0,.35)">
   <div class="role">YOUR HOST</div>
   <div class="name" style="font-size:30px;color:{FOREST}">{host_line(row)}</div>
 </div>
-<div style="position:absolute;left:64px;top:250px;width:500px">
+<div style="position:absolute;left:64px;top:330px;width:480px">
   <div class="kicker" style="margin-bottom:22px">Masterclass · {nice_date(row['Date'])[1]} {nice_date(row['Date'])[2]}</div>
   <h1 style="font-size:{fs}px">{headline(t)}</h1>
   {f'<p class="sub" style="font-size:30px;margin-top:22px">{g.esc(sub)}</p>' if sub else ''}
@@ -193,19 +193,19 @@ def layout_card(row):
     fs = title_size(t, 70)
     inner = f"""
 {top()}
-<div class="photo" style="left:64px;right:64px;top:150px;height:520px;border-radius:32px;
+<div class="photo" style="left:64px;right:64px;top:150px;height:660px;border-radius:32px;
   background-image:url({photo_uri(row)});background-position:{row.get('Photo position') or '50% 22%'}"></div>
-<div style="position:absolute;left:64px;right:64px;top:150px;height:520px;border-radius:32px;
+<div style="position:absolute;left:64px;right:64px;top:150px;height:660px;border-radius:32px;
   background:linear-gradient(180deg,transparent 60%,rgba(6,18,10,.75) 100%)"></div>
 <div style="position:absolute;right:96px;top:120px;width:150px;height:150px;border-radius:50%;
   background:{LIME};color:{FOREST};display:flex;flex-direction:column;align-items:center;
   justify-content:center;box-shadow:0 16px 40px rgba(0,0,0,.4);border:6px solid {FOREST}">
   <span style="font-family:'Display';font-weight:800;font-size:58px;line-height:1">{day}</span>
   <span style="font-weight:700;font-size:22px;letter-spacing:.14em">{mon}</span></div>
-<div style="position:absolute;left:96px;top:592px">
+<div style="position:absolute;left:96px;top:732px">
   <div style="font-size:18px;letter-spacing:.16em;font-weight:700;color:{LIME}">YOUR HOST</div>
   <div class="name">{host_line(row)}</div></div>
-<div style="position:absolute;left:64px;right:64px;top:712px">
+<div style="position:absolute;left:64px;right:64px;top:860px">
   <h1 style="font-size:{fs}px">{headline(t)}</h1>
   {f'<p class="sub" style="font-size:29px;margin-top:14px">{g.esc(sub)}</p>' if sub else ''}
 </div>
@@ -253,19 +253,19 @@ def layout_pass(row):
     logo = logo_dark if os.path.exists(logo_dark) else g.LOGO
     return f"""<style>{PASS_CSS}</style><div class="light">
 <div class="top"><img src="{g.data_uri(logo)}" style="filter:none"/></div>
-<div style="position:absolute;left:64px;top:190px;width:560px">
+<div style="position:absolute;left:64px;top:420px;width:540px">
   <div class="kicker" style="margin-bottom:20px">Monthly Masterclass · {nice_date(row['Date'])[1]} {nice_date(row['Date'])[2]}</div>
   <h1 style="font-size:{fs}px;line-height:1.12">{headline(t)}</h1>
   {f'<p class="sub" style="font-size:28px;margin-top:20px">{g.esc(sub)}</p>' if sub else ''}
 </div>
-<div style="position:absolute;right:190px;top:0;width:56px;height:210px;background:{FOREST};
+<div style="position:absolute;right:205px;top:0;width:56px;height:250px;background:{FOREST};
   transform:skewX(-6deg);box-shadow:inset 0 0 0 6px rgba(209,221,37,.35)"></div>
-<div style="position:absolute;right:78px;top:190px;width:330px;height:560px;background:#fff;
+<div style="position:absolute;right:70px;top:230px;width:390px;height:760px;background:#fff;
   border-radius:28px;transform:rotate(5deg);box-shadow:0 30px 60px rgba(13,66,31,.25);padding:26px">
   <div style="width:90px;height:16px;border-radius:9px;background:#E4EAD0;margin:0 auto 22px"></div>
-  <div style="height:330px;border-radius:18px;background:url({photo_uri(row)}) {row.get('Photo position') or '50% 20%'}/cover no-repeat"></div>
+  <div style="height:480px;border-radius:18px;background:url({photo_uri(row)}) {row.get('Photo position') or '50% 20%'}/cover no-repeat"></div>
   <div style="margin-top:18px;font-size:15px;letter-spacing:.16em;font-weight:700;color:#7d8a2a">SPEAKER</div>
-  <div style="font-family:'Display';font-weight:800;font-size:32px;color:{FOREST};letter-spacing:-.02em;line-height:1.1">{g.esc(row['Host'])}</div>
+  <div style="font-family:'Display';font-weight:800;font-size:38px;color:{FOREST};letter-spacing:-.02em;line-height:1.1">{g.esc(row['Host'])}</div>
   {f'<div style="font-size:19px;font-weight:600;color:rgba(13,66,31,.7);margin-top:4px">aka {aka}</div>' if aka else ''}
   <div style="position:absolute;right:22px;bottom:22px;width:62px;height:62px;border-radius:50%;
     background:{LIME};display:flex;align-items:center;justify-content:center">

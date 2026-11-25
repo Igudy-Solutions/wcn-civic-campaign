@@ -277,7 +277,7 @@ Made before the no-day-count rule; new videos must not open with a countdown.
 |---|---|---|
 | Slides | `tools/generate_carousel.py` | HTML rendered with Chrome at 2x, saved at 1080x1350 |
 | Videos | `tools/video_engine.py` | 1080x1920, 30 fps, H.264 + AAC, crossfade 0.35s |
-| Voice | Kokoro TTS (free, open source), voice `af_heart` | Model files in `~/kokoro/` from github.com/thewh1teagle/kokoro-onnx releases (model-files-v1.0); `pip3 install kokoro-onnx soundfile` |
+| Voice | Kokoro TTS (free, open source), voice `af_heart` | `python3 tools/get_voice_model.py` (pinned, checksum-verified), then `pip3 install kokoro-onnx soundfile` |
 | Music | Made in code inside `video_engine.py` (pads, kick, hats) | Ducked under the voice |
 | Loudness | ffmpeg `loudnorm=I=-14:TP=-1.5:LRA=11` | Instagram level |
 | Captions PDF | `tools/captions_pdf.py` | Needs pandoc and Chrome |
@@ -307,6 +307,8 @@ Everything needed to generate is in the repo:
 | Party colours | `tools/parties.py` |
 | Plan sheet | `CONTENT_PLAN.csv` |
 
-Not in the repo (too big, download once): the Kokoro voice model files,
-about 350 MB, into `~/kokoro/` (see section 5). Candidate photos are added to
+Not in the repo: the Kokoro voice model (325 MB, over GitHub's 100 MB file
+limit). Run `python3 tools/get_voice_model.py` once: it downloads the exact
+same pinned files into `~/kokoro/` and checks their fingerprints, so every
+video gets the identical voice (`af_heart`). Candidate photos are added to
 `images/candidates/` as they come in.

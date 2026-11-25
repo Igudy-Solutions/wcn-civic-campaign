@@ -33,7 +33,7 @@ ROOT = g.ROOT
 SHEET = os.path.join(ROOT, "Masterclass", "schedule.csv")
 OUT_DIR = os.path.join(ROOT, "Masterclass")
 HOST_DIR = os.path.join(ROOT, "images", "hosts")
-LAYOUTS = ("pass", "stamp", "bold")
+LAYOUTS = ("pass", "stamp", "bold", "brutal")
 # Arkcore (25 Nov): square 1080x1080 by default, the details are short.
 # --portrait gives 1080x1350. Only `pass` has a square version so far.
 SIZE = "portrait" if "--portrait" in sys.argv else "square"
@@ -358,7 +358,66 @@ def layout_pass(row):
 </div>"""
 
 
-BUILDERS = {"pass": layout_pass, "stamp": layout_stamp, "bold": layout_bold}
+BRUTAL_CSS = """
+.nb{position:absolute;inset:0;color:%(F)s;background-color:#F5F8E4;
+  background-image:linear-gradient(rgba(13,66,31,.07) 2px,transparent 2px),
+                   linear-gradient(90deg,rgba(13,66,31,.07) 2px,transparent 2px);
+  background-size:54px 54px}
+.nb .box{border:5px solid %(F)s;box-shadow:10px 10px 0 %(F)s;border-radius:18px}
+.nb h1{color:%(F)s;line-height:1.08}
+.nb h1 .acc{display:inline-block;color:%(F)s;background:%(L)s;border:5px solid %(F)s;box-shadow:8px 8px 0 %(F)s;
+  border-radius:14px;padding:0 16px;transform:rotate(-2deg);margin-top:10px}
+.nb .cell{position:absolute;background:#fff;display:flex;align-items:center;gap:16px;padding:0 22px}
+.nb .cell small{display:block;font-size:16px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;opacity:.65}
+.nb .cell b{font-size:25px;font-weight:800;letter-spacing:-.01em}
+.nb .cell .ic{display:flex}
+""" % dict(F=FOREST, L=LIME)
+
+
+def layout_brutal(row):
+    """Neubrutalism: thick forest borders, hard offset shadows, lime stickers."""
+    t = row["Title"]
+    sub = row.get("Subtitle", "").strip()
+    fs = title_size(t, 66 if SQ else 72)
+    _, day, mon = nice_date(row["Date"])
+    long = nice_date(row["Date"])[0]
+    o = 0 if SQ else 140          # push things down on portrait
+    ig = circ(g.IG_ICON.format(c=LIME))
+    x = circ(g.X_ICON.format(c=LIME))
+    def cell(left, width, icon, label, val, bg="#fff", fg=FOREST, icol=FOREST):
+        v = g.esc(val) if val else TBC
+        return (f'<div class="cell box" style="left:{left}px;top:{H-245}px;width:{width}px;height:104px;'
+                f'background:{bg};color:{fg}"><span class="ic" style="color:{icol}">{ICONS[icon]}</span>'
+                f'<span><small>{label}</small><b>{v}</b></span></div>')
+    return f"""<style>{BRUTAL_CSS}</style><div class="nb">
+<div class="top"><img src="{g.data_uri(logo_file('wcn-horizontal-lime-green.png'))}" style="filter:none"/>
+  <span class="box" style="background:{LIME};padding:12px 22px;font-weight:800;font-size:20px;letter-spacing:.14em;
+   box-shadow:6px 6px 0 {FOREST};border-radius:999px">MONTHLY MASTERCLASS</span></div>
+<div style="position:absolute;left:64px;top:{230+o}px;width:520px">
+  <h1 style="font-size:{fs}px">{headline(t)}</h1>
+  {f'<div class="box" style="display:inline-block;margin-top:34px;background:#fff;padding:14px 20px;font-size:25px;font-weight:700;box-shadow:6px 6px 0 {FOREST}">{g.esc(sub)}</div>' if sub else ''}
+</div>
+<div class="box" style="position:absolute;right:76px;top:{160+o}px;width:390px;height:{500 if SQ else 620}px;
+  transform:rotate(2.5deg);box-shadow:16px 16px 0 {FOREST};
+  background:url({photo_uri(row)}) {row.get('Photo position') or '50% 20%'}/cover no-repeat"></div>
+<div class="box" style="position:absolute;right:120px;top:{600+o+(0 if SQ else 120)}px;background:#fff;padding:12px 22px;
+  transform:rotate(-2deg)">
+  <div style="font-size:15px;letter-spacing:.16em;font-weight:800;color:#6f7d14">SPEAKER</div>
+  <div style="font-family:'Display';font-weight:800;font-size:32px;letter-spacing:-.02em">{g.esc(row['Host'])}</div></div>
+<div class="box" style="position:absolute;right:400px;top:{130+o}px;width:136px;height:136px;border-radius:50%;
+  background:{LIME};display:flex;flex-direction:column;align-items:center;justify-content:center;
+  transform:rotate(-12deg);box-shadow:7px 7px 0 {FOREST};z-index:3">
+  <span style="font-family:'Display';font-weight:800;font-size:52px;line-height:1">{day}</span>
+  <span style="font-weight:800;font-size:21px;letter-spacing:.14em">{mon}</span></div>
+{cell(64, 330, "date", "Date", long, bg=FOREST, fg="#fff", icol=LIME)}
+{cell(420, 250, "time", "Time", row.get("Time", "").strip())}
+{cell(696, 320, "where", "Where", row.get("Platform", "").strip(), bg=LIME)}
+<div class="foot"><div><span class="soc">{ig}{g.esc(g.IG_HANDLE)}</span>
+  <span class="soc">{x}{g.esc(g.X_HANDLE)}</span></div><span class="free" style="color:{FOREST}">SAVE THE DATE</span></div>
+</div>"""
+
+
+BUILDERS = {"pass": layout_pass, "stamp": layout_stamp, "bold": layout_bold, "brutal": layout_brutal}
 
 
 def html(row, layout):
@@ -380,7 +439,7 @@ def build(row, layouts):
 
 
 def main(argv):
-    layouts = ("pass",) if SQ else LAYOUTS
+    layouts = ("pass", "brutal") if SQ else LAYOUTS
     if "--layout" in argv:
         layouts = (argv[argv.index("--layout") + 1],)
     rows = load()

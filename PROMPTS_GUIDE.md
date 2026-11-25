@@ -307,8 +307,9 @@ Everything needed to generate is in the repo:
 | Party colours | `tools/parties.py` |
 | Plan sheet | `CONTENT_PLAN.csv` |
 
-Not in the repo: the Kokoro voice model (325 MB, over GitHub's 100 MB file
-limit). Run `python3 tools/get_voice_model.py` once: it downloads the exact
-same pinned files into `~/kokoro/` and checks their fingerprints, so every
+The Kokoro voice model (325 MB, over GitHub's 100 MB git file limit) is kept
+on this repo's Releases page, tag `voice-model-v1.0`, not in the git tree.
+Run `python3 tools/get_voice_model.py` once: it downloads those exact pinned
+files into `~/kokoro/` and checks their fingerprints, so every
 video gets the identical voice (`af_heart`). Candidate photos are added to
 `images/candidates/` as they come in.

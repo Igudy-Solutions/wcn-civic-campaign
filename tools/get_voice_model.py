@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Download the exact Kokoro voice model the campaign videos use.
 
-The model is 325 MB, over GitHub's 100 MB file limit, so it is not stored in
-the repo. This fetches the same pinned release (kokoro-onnx model-files-v1.0)
+The model is 325 MB, over GitHub's 100 MB file limit for git, so it is kept on
+this repo's Releases page (tag voice-model-v1.0) instead of in the git tree.
+This fetches that pinned copy (same files as kokoro-onnx model-files-v1.0)
 into ~/kokoro/ and checks the SHA-256 of each file, so everyone ends up with
 byte-for-byte the same voice as the published videos.
 
@@ -13,7 +14,12 @@ import hashlib
 import os
 import urllib.request
 
-BASE = "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/"
+# Copy kept on this repo's own Releases page (tag voice-model-v1.0); the
+# upstream kokoro-onnx release is the fallback. Same files, same checksums.
+SOURCES = [
+    "https://github.com/Igudy-Solutions/wcn-civic-campaign/releases/download/voice-model-v1.0/",
+    "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/",
+]
 FILES = {
     "kokoro-v1.0.onnx": "7d5df8ecf7d4b1878015a32686053fd0eebe2bc377234608764cc0ef3636a6c5",
     "voices-v1.0.bin": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
@@ -37,12 +43,20 @@ def main():
             print(f"ok      {name}")
             continue
         print(f"get     {name} ...")
-        urllib.request.urlretrieve(BASE + name, path + ".part")
-        got = sha256(path + ".part")
-        if got != want:
+        for base in SOURCES:
+            try:
+                urllib.request.urlretrieve(base + name, path + ".part")
+            except OSError as err:
+                print(f"        {base}: {err}")
+                continue
+            got = sha256(path + ".part")
+            if got == want:
+                os.replace(path + ".part", path)
+                break
             os.remove(path + ".part")
-            raise SystemExit(f"{name}: checksum mismatch ({got}), not saved")
-        os.replace(path + ".part", path)
+            print(f"        {base}: checksum mismatch ({got})")
+        else:
+            raise SystemExit(f"{name}: no source gave the right file, not saved")
         print(f"ok      {name}")
     print("Voice model ready in", DEST, "(voice used: af_heart)")
 

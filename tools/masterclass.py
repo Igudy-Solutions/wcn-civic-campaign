@@ -398,7 +398,7 @@ def layout_brutal(row):
   {f'<div class="box" style="display:inline-block;margin-top:34px;background:#fff;padding:14px 20px;font-size:25px;font-weight:700;box-shadow:6px 6px 0 {FOREST}">{g.esc(sub)}</div>' if sub else ''}
 </div>
 <div class="box" style="position:absolute;right:76px;top:{160+o}px;width:390px;height:{500 if SQ else 620}px;
-  transform:rotate(2.5deg);box-shadow:16px 16px 0 {FOREST};
+  transform:rotate(2.5deg);box-shadow:16px 16px 0 #5E9A4A;
   background:url({photo_uri(row)}) {row.get('Photo position') or '50% 20%'}/cover no-repeat"></div>
 <div class="box" style="position:absolute;right:120px;top:{600+o+(0 if SQ else 120)}px;background:#fff;padding:12px 22px;
   transform:rotate(-2deg)">

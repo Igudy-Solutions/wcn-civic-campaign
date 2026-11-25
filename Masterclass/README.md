@@ -1,7 +1,7 @@
 # WCN Monthly Masterclass flyers
 
 One team member teaches a masterclass on the last Friday of each month.
-Each session gets an Instagram portrait flyer (1080x1350) in WCN brand
+Each session gets a square Instagram flyer (1080x1080, Arkcore 25 Nov; `--portrait` gives 1080x1350) in WCN brand
 (Sora, lime `#D1DD25`, forest `#0D421F`, WCN logo top left).
 
 | Path | What it holds |
@@ -29,7 +29,8 @@ A row with no Title is skipped.
 ## Render
 
 ```bash
-python3 tools/masterclass.py 2026-11-27                 # all three layouts
+python3 tools/masterclass.py 2026-11-27                 # square pass flyer
+python3 tools/masterclass.py 2026-11-27 --portrait      # all three layouts, portrait
 python3 tools/masterclass.py 2026-12-18 --layout pass   # one layout
 python3 tools/masterclass.py --all                      # every titled row
 ```

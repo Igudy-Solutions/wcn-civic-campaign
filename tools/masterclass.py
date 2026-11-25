@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-WCN Monthly Masterclass flyers, 1080x1350 (Instagram portrait).
+WCN Monthly Masterclass flyers, 1080x1080 square (default) or 1080x1350 with --portrait.
 
 One flyer per row of Masterclass/schedule.csv. Edit the sheet, not this file.
 
@@ -34,6 +34,11 @@ SHEET = os.path.join(ROOT, "Masterclass", "schedule.csv")
 OUT_DIR = os.path.join(ROOT, "Masterclass")
 HOST_DIR = os.path.join(ROOT, "images", "hosts")
 LAYOUTS = ("pass", "stamp", "bold")
+# Arkcore (25 Nov): square 1080x1080 by default, the details are short.
+# --portrait gives 1080x1350. Only `pass` has a square version so far.
+SIZE = "portrait" if "--portrait" in sys.argv else "square"
+SQ = SIZE == "square"
+H = 1080 if SQ else 1350
 
 LIME, FOREST, INK = g.ACCENT, g.FOREST, g.INK
 TBC = "To be announced"
@@ -53,7 +58,7 @@ def css():
     return f"""
 {g.font_css()}
 *{{margin:0;padding:0;box-sizing:border-box}}
-html,body{{width:1080px;height:1350px;overflow:hidden}}
+html,body{{width:1080px;height:{H}px;overflow:hidden}}
 body{{font-family:'Sans';color:#fff;position:relative;
   background:
     radial-gradient(900px 700px at 100% 0%, rgba(209,221,37,.22), transparent 60%),
@@ -309,7 +314,10 @@ def layout_pass(row):
     """Light layout: the host photo on a WCN speaker pass hanging from a lanyard."""
     t = row["Title"]
     sub = row.get("Subtitle", "").strip()
-    fs = title_size(t, 70)
+    fs = title_size(t, 64 if SQ else 70)
+    # square / portrait geometry
+    txt_top, lan_h, card_top, card_h, ph_h, name_fs = ((250, 160, 140, 610, 425, 34) if SQ
+                                                        else (420, 250, 230, 760, 480, 38))
     first = g.esc(row["Host"].split()[0])
     aka = g.esc((row.get("Also known as") or "").strip())
     ig = g.IG_ICON.format(c=FOREST)
@@ -318,19 +326,19 @@ def layout_pass(row):
     logo = logo_dark if os.path.exists(logo_dark) else g.LOGO
     return f"""<style>{PASS_CSS}</style><div class="light">
 <div class="top"><img src="{g.data_uri(logo)}" style="filter:none"/></div>
-<div style="position:absolute;left:64px;top:420px;width:540px">
+<div style="position:absolute;left:64px;top:{txt_top}px;width:540px">
   <div class="kicker" style="margin-bottom:20px">Monthly Masterclass · {nice_date(row['Date'])[1]} {nice_date(row['Date'])[2]}</div>
   <h1 style="font-size:{fs}px;line-height:1.12">{headline(t)}</h1>
   {f'<p class="sub" style="font-size:28px;margin-top:20px">{g.esc(sub)}</p>' if sub else ''}
 </div>
-<div style="position:absolute;right:205px;top:0;width:56px;height:250px;background:{FOREST};
+<div style="position:absolute;right:205px;top:0;width:56px;height:{lan_h}px;background:{FOREST};
   transform:skewX(-6deg);box-shadow:inset 0 0 0 6px rgba(209,221,37,.35)"></div>
-<div style="position:absolute;right:70px;top:230px;width:390px;height:760px;background:#fff;
+<div style="position:absolute;right:70px;top:{card_top}px;width:390px;height:{card_h}px;background:#fff;
   border-radius:28px;transform:rotate(5deg);box-shadow:0 30px 60px rgba(13,66,31,.25);padding:26px">
   <div style="width:90px;height:16px;border-radius:9px;background:#E4EAD0;margin:0 auto 22px"></div>
-  <div style="height:480px;border-radius:18px;background:url({photo_uri(row)}) {row.get('Photo position') or '50% 20%'}/cover no-repeat"></div>
+  <div style="height:{ph_h}px;border-radius:18px;background:url({photo_uri(row)}) {row.get('Photo position') or '50% 20%'}/cover no-repeat"></div>
   <div style="margin-top:18px;font-size:15px;letter-spacing:.16em;font-weight:700;color:#7d8a2a">SPEAKER</div>
-  <div style="font-family:'Display';font-weight:800;font-size:38px;color:{FOREST};letter-spacing:-.02em;line-height:1.1">{g.esc(row['Host'])}</div>
+  <div style="font-family:'Display';font-weight:800;font-size:{name_fs}px;color:{FOREST};letter-spacing:-.02em;line-height:1.1">{g.esc(row['Host'])}</div>
   {f'<div style="font-size:19px;font-weight:600;color:rgba(13,66,31,.7);margin-top:4px">aka {aka}</div>' if aka else ''}
   <div style="position:absolute;right:22px;bottom:22px;width:62px;height:62px;border-radius:50%;
     background:{LIME};display:flex;align-items:center;justify-content:center">
@@ -359,13 +367,13 @@ def build(row, layouts):
     out = os.path.join(OUT_DIR, f"{row['Date']} - {first}")
     os.makedirs(out, exist_ok=True)
     for lay in layouts:
-        path = os.path.join(out, f"flyer-{lay}.png")
-        g.render(html(row, lay), path)
+        path = os.path.join(out, f"flyer-{lay}.png" if SQ else f"flyer-{lay}-portrait.png")
+        g.render(html(row, lay), path, SIZE)
         print("  rendered", os.path.relpath(path, ROOT))
 
 
 def main(argv):
-    layouts = LAYOUTS
+    layouts = ("pass",) if SQ else LAYOUTS
     if "--layout" in argv:
         layouts = (argv[argv.index("--layout") + 1],)
     rows = load()

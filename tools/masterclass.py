@@ -33,7 +33,7 @@ ROOT = g.ROOT
 SHEET = os.path.join(ROOT, "Masterclass", "schedule.csv")
 OUT_DIR = os.path.join(ROOT, "Masterclass")
 HOST_DIR = os.path.join(ROOT, "images", "hosts")
-LAYOUTS = ("arch", "card")
+LAYOUTS = ("arch", "card", "pass")
 
 LIME, FOREST, INK = g.ACCENT, g.FOREST, g.INK
 TBC = "To be announced"
@@ -216,7 +216,69 @@ def layout_card(row):
     return inner
 
 
-BUILDERS = {"arch": layout_arch, "card": layout_card}
+PASS_CSS = f"""
+.light{{position:absolute;inset:0;color:{FOREST};
+  background:radial-gradient(700px 600px at 95% 10%, rgba(209,221,37,.45), transparent 60%),
+             radial-gradient(700px 600px at 0% 100%, rgba(13,66,31,.12), transparent 60%),
+             linear-gradient(180deg,#F7F9EC 0%,#EEF3DA 100%)}}
+.light .pill{{border-color:{FOREST};color:{FOREST}}}
+.light .kicker{{color:#5d6b0a}}
+.light h1{{color:{FOREST}}}
+.light h1 .acc{{color:{FOREST};background:{LIME};padding:0 14px;border-radius:10px;
+  -webkit-box-decoration-break:clone}}
+.light .sub{{color:rgba(13,66,31,.85)}}
+.light .learn{{background:#fff;border-radius:26px;padding:26px 28px 14px;
+  box-shadow:0 16px 40px rgba(13,66,31,.12)}}
+.light .learn h3{{color:{FOREST};opacity:.6}}
+.light .learn li{{font-size:23px;color:{INK}}}
+.light .info{{background:#fff;border-color:rgba(13,66,31,.12);box-shadow:0 16px 40px rgba(13,66,31,.10)}}
+.light .info div{{border-left-color:rgba(13,66,31,.1)}}
+.light .info div:first-child{{background:{FOREST};color:#fff}}
+.light .info .tbc{{color:rgba(13,66,31,.5)}}
+.light .foot{{color:{FOREST}}}
+.light .foot .free{{color:{FOREST}}}
+"""
+
+
+def layout_pass(row):
+    """Light layout: the host photo on a WCN speaker pass hanging from a lanyard."""
+    t = row["Title"]
+    sub = row.get("Subtitle", "").strip()
+    fs = title_size(t, 70)
+    first = g.esc(row["Host"].split()[0])
+    aka = g.esc((row.get("Also known as") or "").strip())
+    ig = g.IG_ICON.format(c=FOREST)
+    x = g.X_ICON.format(c=FOREST)
+    logo_dark = os.path.join(g.ASSET_DIR, "logo", "wcn-horizontal-lime-green.png")
+    logo = logo_dark if os.path.exists(logo_dark) else g.LOGO
+    return f"""<style>{PASS_CSS}</style><div class="light">
+<div class="top"><img src="{g.data_uri(logo)}" style="filter:none"/></div>
+<div style="position:absolute;left:64px;top:190px;width:560px">
+  <div class="kicker" style="margin-bottom:20px">Monthly Masterclass · {nice_date(row['Date'])[1]} {nice_date(row['Date'])[2]}</div>
+  <h1 style="font-size:{fs}px;line-height:1.12">{headline(t)}</h1>
+  {f'<p class="sub" style="font-size:28px;margin-top:20px">{g.esc(sub)}</p>' if sub else ''}
+</div>
+<div style="position:absolute;right:190px;top:0;width:56px;height:210px;background:{FOREST};
+  transform:skewX(-6deg);box-shadow:inset 0 0 0 6px rgba(209,221,37,.35)"></div>
+<div style="position:absolute;right:78px;top:190px;width:330px;height:560px;background:#fff;
+  border-radius:28px;transform:rotate(5deg);box-shadow:0 30px 60px rgba(13,66,31,.25);padding:26px">
+  <div style="width:90px;height:16px;border-radius:9px;background:#E4EAD0;margin:0 auto 22px"></div>
+  <div style="height:330px;border-radius:18px;background:url({photo_uri(row)}) {row.get('Photo position') or '50% 20%'}/cover no-repeat"></div>
+  <div style="margin-top:18px;font-size:15px;letter-spacing:.16em;font-weight:700;color:#7d8a2a">SPEAKER</div>
+  <div style="font-family:'Display';font-weight:800;font-size:32px;color:{FOREST};letter-spacing:-.02em;line-height:1.1">{g.esc(row['Host'])}</div>
+  {f'<div style="font-size:19px;font-weight:600;color:rgba(13,66,31,.7);margin-top:4px">aka {aka}</div>' if aka else ''}
+  <div style="position:absolute;right:22px;bottom:22px;width:62px;height:62px;border-radius:50%;
+    background:{LIME};display:flex;align-items:center;justify-content:center">
+    <img src="{g.data_uri(os.path.join(g.ASSET_DIR, 'logo', 'wcn-mark-black.png'))}" style="width:40px;opacity:.85"/></div>
+</div>
+<div style="position:absolute;left:64px;right:64px;top:{850 if sub else 800}px">{learn_list(row)}</div>
+{info_bar(row)}
+<div class="foot"><div><span class="soc">{ig}{g.esc(g.IG_HANDLE)}</span>
+  <span class="soc">{x}{g.esc(g.X_HANDLE)}</span></div><span class="free">SAVE THE DATE</span></div>
+</div>"""
+
+
+BUILDERS = {"arch": layout_arch, "card": layout_card, "pass": layout_pass}
 
 
 def html(row, layout):

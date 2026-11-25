@@ -34,8 +34,9 @@ python3 tools/masterclass.py 2026-12-18 --layout arch   # one layout
 python3 tools/masterclass.py --all                      # every titled row
 ```
 
-Two layouts: `arch` (text left, photo in a tall lime-edged arch) and
-`card` (photo in a wide card on top with a date badge, text below).
+Three layouts: `arch` (dark, text left, photo in a tall lime-edged arch),
+`card` (dark, photo in a wide card on top with a date badge) and `pass`
+(light, photo on a WCN speaker pass hanging from a lanyard).
 Needs Google Chrome, Python 3 and Pillow, like the rest of the repo.
 
 ## Hosts on file

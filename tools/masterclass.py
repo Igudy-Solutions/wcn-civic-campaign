@@ -389,10 +389,11 @@ def layout_brutal(row):
     """Neubrutalism: thick forest borders, hard offset shadows, lime stickers."""
     t = row["Title"]
     sub = row.get("Subtitle", "").strip()
-    fs = 86 if len(t) <= 20 else title_size(t, 66 if SQ else 72)
+    fs = 86 if len(t) <= 20 else title_size(t, 66)
     _, day, mon = nice_date(row["Date"])
     long = nice_date(row["Date"])[0]
-    o = 0 if SQ else 140          # push things down on portrait
+    o = 0 if SQ else 40           # portrait: photo a little lower and much taller
+    tx = 0 if SQ else 150         # portrait: title block lower, centred on the photo
     ig = circ(g.IG_ICON.format(c=LIME))
     x = circ(g.X_ICON.format(c=LIME))
     def cell(left, width, icon, label, val, bg="#fff", fg=FOREST, icol=FOREST, shadow=SHADE):
@@ -404,14 +405,14 @@ def layout_brutal(row):
 <div class="top"><img src="{g.data_uri(logo_file('wcn-horizontal-lime-green.png'))}" style="filter:none"/>
   <span class="box" style="background:{LIME};padding:12px 22px;font-weight:800;font-size:20px;letter-spacing:.14em;
    box-shadow:6px 6px 0 {SHADE};border-radius:999px">MONTHLY MASTERCLASS</span></div>
-<div style="position:absolute;left:64px;top:{(230 if sub else 290)+o}px;width:{520 if len(t) <= 30 else 470}px">
+<div style="position:absolute;left:64px;top:{(230 if sub else 290)+tx}px;width:{520 if len(t) <= 30 else 470}px">
   <h1 style="font-size:{fs}px">{headline(t, row.get("Highlight", ""))}</h1>
   {f'<div class="box" style="display:inline-block;margin-top:34px;background:#fff;padding:14px 20px;font-size:25px;font-weight:700;box-shadow:6px 6px 0 {SHADE}">{g.esc(sub)}</div>' if sub else ''}
 </div>
-<div class="box" style="position:absolute;right:76px;top:{160+o}px;width:390px;height:{500 if SQ else 620}px;
+<div class="box" style="position:absolute;right:76px;top:{160+o}px;width:390px;height:{500 if SQ else 760}px;
   transform:rotate(2.5deg);box-shadow:16px 16px 0 {SHADE};
   background:url({photo_uri(row)}) {row.get('Photo position') or '50% 20%'}/cover no-repeat"></div>
-<div class="box" style="position:absolute;right:120px;top:{600+o+(0 if SQ else 120)}px;background:#fff;padding:12px 22px;
+<div class="box" style="position:absolute;right:120px;top:{600+o+(0 if SQ else 255)}px;background:#fff;padding:12px 22px;
   transform:rotate(-2deg)">
   <div style="font-size:15px;letter-spacing:.16em;font-weight:800;color:#6f7d14">SPEAKER</div>
   <div style="font-family:'Display';font-weight:800;font-size:32px;letter-spacing:-.02em">{g.esc(row['Host'])}</div>

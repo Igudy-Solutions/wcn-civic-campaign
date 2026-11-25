@@ -102,7 +102,7 @@ h1 .acc{{color:{LIME}}}
 .info .tbc{{color:rgba(255,255,255,.55);font-weight:600;font-style:italic}}
 .foot{{position:absolute;left:64px;right:64px;bottom:50px;display:flex;
   justify-content:space-between;align-items:center;font-size:21px;font-weight:600}}
-.soc{{display:inline-flex;align-items:center;gap:10px;margin-right:30px}}
+.soc{{display:inline-flex;align-items:center;gap:12px;margin-right:30px}}
 .foot .free{{color:{LIME};font-weight:700;letter-spacing:.06em}}
 """
 
@@ -178,6 +178,13 @@ def title_size(title, base, long_at=30):
     return base if len(title) <= long_at else int(base * 0.84)
 
 
+def circ(svg, bg=FOREST):
+    """A social icon inside a filled circle (Arkcore, 25 Nov)."""
+    svg = svg.replace('width="30" height="30"', 'width="24" height="24"').replace('width="27" height="27"', 'width="21" height="21"')
+    return (f'<span style="display:inline-flex;align-items:center;justify-content:center;width:46px;'
+            f'height:46px;border-radius:50%;background:{bg};flex:none">{svg}</span>')
+
+
 # ------------------------------------------------------------------ layouts
 def kicker_date(row):
     _, d, m = nice_date(row["Date"])
@@ -185,8 +192,8 @@ def kicker_date(row):
 
 
 def socials_foot(color, right="SAVE THE DATE"):
-    ig = g.IG_ICON.format(c=color)
-    x = g.X_ICON.format(c=color)
+    ig = circ(g.IG_ICON.format(c=LIME))
+    x = circ(g.X_ICON.format(c=LIME))
     return (f'<div class="foot" style="color:{color}"><div><span class="soc">{ig}{g.esc(g.IG_HANDLE)}</span>'
             f'<span class="soc">{x}{g.esc(g.X_HANDLE)}</span></div>'
             f'<span class="free" style="color:{color}">{right}</span></div>')
@@ -320,8 +327,8 @@ def layout_pass(row):
                                                         else (420, 250, 230, 760, 480, 38))
     first = g.esc(row["Host"].split()[0])
     aka = g.esc((row.get("Also known as") or "").strip())
-    ig = g.IG_ICON.format(c=FOREST)
-    x = g.X_ICON.format(c=FOREST)
+    ig = circ(g.IG_ICON.format(c=LIME))
+    x = circ(g.X_ICON.format(c=LIME))
     logo_dark = os.path.join(g.ASSET_DIR, "logo", "wcn-horizontal-lime-green.png")
     logo = logo_dark if os.path.exists(logo_dark) else g.LOGO
     return f"""<style>{PASS_CSS}</style><div class="light">

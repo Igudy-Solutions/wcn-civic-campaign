@@ -171,7 +171,7 @@ def layout_arch(row):
   background-position:{row.get('Photo position') or '50% 20%'};border:6px solid {LIME}"></div>
 <div style="position:absolute;right:40px;top:900px;width:518px;background:{LIME};color:{FOREST};
   border-radius:20px;padding:18px 24px;box-shadow:0 18px 40px rgba(0,0,0,.35)">
-  <div class="role">YOUR HOST</div>
+  <div class="role">SPEAKER</div>
   <div class="name" style="font-size:30px;color:{FOREST}">{host_line(row)}</div>
 </div>
 <div style="position:absolute;left:64px;top:330px;width:480px">
@@ -203,7 +203,7 @@ def layout_card(row):
   <span style="font-family:'Display';font-weight:800;font-size:58px;line-height:1">{day}</span>
   <span style="font-weight:700;font-size:22px;letter-spacing:.14em">{mon}</span></div>
 <div style="position:absolute;left:96px;top:732px">
-  <div style="font-size:18px;letter-spacing:.16em;font-weight:700;color:{LIME}">YOUR HOST</div>
+  <div style="font-size:18px;letter-spacing:.16em;font-weight:700;color:{LIME}">SPEAKER</div>
   <div class="name">{host_line(row)}</div></div>
 <div style="position:absolute;left:64px;right:64px;top:860px">
   <h1 style="font-size:{fs}px">{headline(t)}</h1>

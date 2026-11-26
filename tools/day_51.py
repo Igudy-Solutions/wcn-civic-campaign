@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 """Day 51: Thu 26 Nov 2026. Single. Peaceful Participation.
 
-Your future is worth fighting for. Fight with your vote.
-Rewritten 26 Nov (Arkcore): lead with what is at stake and why it is worth
-the fight, instead of only "no candidate is worth your life". The fight is
-the vote: showing up, staying, watching the count. Never violence.
+Your future is worth showing up for.
+Rewritten 26 Nov (Arkcore): lead with what is at stake and why it matters,
+in a neutral, calm tone. No fight, aggression or violence language.
 Photo: ai-23-inked-group (young voters holding up inked thumbs).
 """
 import os
@@ -20,9 +19,9 @@ OUT = folder_for(DAY)
 SLIDES = [
     ("statement", dict(
         lead="Your hospital. Your school. Your job.\nThe next four years are on this ballot.",
-        punch="Your future\nis worth\nfighting for.",
+        punch="Your future\nis worth\nshowing up for.",
         size=128,
-        body="Fight with your PVC, not your fists. Show up, stay to watch the count, and walk away from trouble. Violence only wins when good people stay home.",
+        body="Collect your PVC, show up early, and stay calm in the queue. Your vote is how you speak for the next four years.",
         photo="ai-23-inked-group.png",
         pos="50% 20%",
     )),

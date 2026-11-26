@@ -143,9 +143,10 @@ its own `tools/day_NN.py` to re-render.
 - All day folders now live in `Daily Posts/` (Arkcore asked for one folder).
   `tools/plan.py` (`DAYS_DIR`), `captions_pdf.py` and `_gen/common.py` follow it;
   day scripts are unchanged because they use `folder_for`.
-- Day 51 rewritten at Arkcore's ask: "Your future is worth fighting for." It
-  leads with the stakes (hospital, school, job, four years) and makes the fight
-  the vote: fight with your PVC, not your fists. Folder renamed to match.
+- Day 51 rewritten at Arkcore's ask: "Your future is worth showing up for." It
+  leads with the stakes (hospital, school, job, four years) in a neutral, calm
+  tone: no fight, aggression or violence language (a "fighting for" draft was
+  dropped the same morning). Folder renamed to match.
 - PVCs are out, so `Specials/Collect Your PVC` (`tools/special_pvc.py`) starts
   the collection push: no day count, post now and repost. Collection points and
   deadline marked VERIFY.

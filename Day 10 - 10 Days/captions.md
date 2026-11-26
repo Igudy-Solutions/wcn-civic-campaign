@@ -1,32 +1,45 @@
-# Day 10, 10 days.
+# Day 10, 10 Days
 
 **Post on** Wed 06 Jan 2027
 **Format** Single
 **Pillar** Know the Process
-**Status** planned
-**Built by** `tools/day_10.py` (not written yet)
+**Status** built, for team review
+**Built by** `tools/day_10.py`
 
-## Idea
-
-Countdown single
+Countdown single: 10 days, a quick readiness check.
 
 ## The slides
 
-| # | What it carries |
-|---|---|
-| 1 | Cover: 10 days. |
+| # | Photo | What it carries |
+|---|---|---|
+| 1 | Smiling young woman with an inked thumb | 10 days. Ready? PVC, polling unit, route, friends |
+
+## Sources
+
+(not printed on the slides)
+
+- No figures on this post
 
 ## Instagram caption
 
-(write here)
+10 days to Saturday 16 January 2027.
+
+Ready?
+PVC in your hand.
+Polling unit confirmed.
+Route planned.
+Three friends coming with you.
+
+If any of those isn't done, do it this weekend.
 
 #YourVoteYourVoice #YourVoteCounts #NigeriaDecides2027 #10DaysToGo
 
 ## X (Twitter)
 
-Max 4 images per post. A carousel over 4 slides goes out as a thread:
-post 1 takes slides 1 to 4, each reply takes the next 4. Under 280 characters each.
+**Post 1**
 
-**Post 1** (slides 1 to 4)
+10 days to election day. Ready?
 
-(write here)
+PVC in hand. Polling unit confirmed. Route planned. Three friends coming with you.
+
+Not done? Do it this weekend. #NigeriaDecides2027

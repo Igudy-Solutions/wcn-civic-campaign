@@ -228,6 +228,48 @@ Young Nigerian man at a busy Lagos bus stop reading intently on his phone, yello
 Young Nigerian woman on a city street proudly holding up her plain green voter card toward the camera, friends behind her smiling. Candid photojournalism, natural light. No party logos, no readable text on the card. Vertical composition, subjects in upper two thirds, lower third darker and uncluttered.
 ```
 
+**ai-18-bus-park.png**
+
+```
+Busy Nigerian motor park in December, young travellers with bags and suitcases boarding a long-distance bus, families saying goodbye, warm afternoon light. Candid photojournalism, natural light. No party logos, no readable text. Vertical composition, subjects in upper two thirds, lower third darker and uncluttered.
+```
+
+**ai-19-airport.png**
+
+```
+Young Nigerian woman with a suitcase standing in an airport departure hall in Lagos, looking thoughtfully at a plain green card in her hand, travellers blurred behind her. Candid photojournalism, natural light. No party logos, no readable text. Vertical composition, subject in upper two thirds, lower third darker and uncluttered.
+```
+
+**ai-22-official-explains.png**
+
+```
+Nigerian polling official in a plain vest patiently explaining the voting process to an elderly woman voter at an outdoor polling unit under a canopy, other voters waiting calmly. Candid photojournalism, natural light. No party logos, no readable text. Vertical composition, subjects in upper two thirds, lower third darker and uncluttered.
+```
+
+**ai-23-inked-group.png**
+
+```
+Group of young Nigerian men and women in their twenties smiling and holding up thumbs stained with purple voting ink outside a school polling unit, joyful and proud. Candid photojournalism, natural light. No party logos, no readable text. Vertical composition, subjects in upper two thirds, lower third darker and uncluttered.
+```
+
+**ai-24-peace-walk.png**
+
+```
+Community peace walk in a Nigerian town, young people, elders, a pastor and an imam walking together arm in arm, wearing white, calm and united. Candid photojournalism, natural light. No party logos, no banners, no readable text. Vertical composition, subjects in upper two thirds, lower third darker and uncluttered.
+```
+
+**ai-26-results-wall.png**
+
+```
+Nigerian residents at dusk taking photos with their phones of a result sheet pinned on the wall outside a school polling unit, calm small crowd. Sheet not readable. Candid photojournalism, natural light. No party logos, no readable text. Vertical composition, subjects in upper two thirds, lower third darker and uncluttered.
+```
+
+**ai-27-wheelchair-voter.png**
+
+```
+Nigerian voter in a wheelchair being given priority and assisted by a polling official at a school polling unit, other voters waiting respectfully. Candid photojournalism, natural light. No party logos, no readable text. Vertical composition, subjects in upper two thirds, lower third darker and uncluttered.
+```
+
 ---
 
 ## 4. Video voice scripts
@@ -268,6 +310,60 @@ Made before the no-day-count rule; new videos must not open with a countdown.
 4. Listen to all of them. Then decide for yourself.
 5. Your ballot is secret. Nobody sees who you choose.
 6. Not their vote. Yours.
+
+### Day 43, before you forward (`tools/day_43.py`)
+
+1. A message lands in your family group. It says the election has been moved.
+2. Before you forward it, stop.
+3. Who sent it first? Is there a date? Is there a name you can check?
+4. Election news comes from Eye-neck. Check its website and its verified pages.
+5. If you can't confirm it, don't share it.
+6. Check before you share.
+
+### Day 32, "I voted in 2023 and nothing changed" (`tools/day_32.py`)
+
+1. I voted in twenty twenty-three and nothing changed. We hear you.
+2. In twenty twenty-three, about ninety-three million people registered. About sixty-eight million of them did not vote.
+3. Elections are decided by the people who show up.
+4. And one vote is only the start. Know who you elected. Ask what they did.
+5. Change takes more than one Saturday. It starts with this one.
+6. Vote. Then follow up.
+
+### Day 24, Japa, vote before you go (`tools/day_24.py`)
+
+1. Planning to travel out of Nigeria soon?
+2. Nigeria has no voting from abroad. No postal votes. No embassy voting.
+3. You can only vote in person, at your own polling unit.
+4. If you can, book your trip after Saturday the sixteenth of January.
+5. And if you'll still be here on the sixth of February, vote again.
+6. Vote before you go.
+
+### Day 16, fake results, wait for INEC (`tools/day_16.py`)
+
+1. On election night, results will fly around your phone.
+2. Some will be real. Many will not.
+3. Real results start at your polling unit. They're counted in public and pinned on the wall.
+4. Eye-neck uploads polling unit results to its results viewing portal, and only Eye-neck declares the winner.
+5. Don't share a result you can't trace.
+6. Wait for Eye-neck.
+
+### Day 7, know your route (`tools/day_07.py`)
+
+1. Do you know exactly where you're voting?
+2. Your polling unit is printed on your voter's card. You can also check it with Eye-neck.
+3. Go and see it before election day. Find the gate, the building, the way in.
+4. Movement is usually restricted on election day, so plan to walk or go nearby.
+5. Go early. Take your card. Take water.
+6. Know your route.
+
+### Day 1, election eve (`tools/day_01.py`)
+
+1. Saturday, the sixteenth of January. Nigeria decides.
+2. Three ballots. President, Senate, House of Representatives.
+3. Take your voter's card. Go early. Stay in the queue.
+4. Your ballot is secret. Nobody can buy it and nobody can see it.
+5. Whatever happens, stay peaceful. Wait for Eye-neck.
+6. Go early. Stay peaceful.
 
 ---
 

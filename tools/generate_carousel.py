@@ -385,6 +385,10 @@ LIST_CSS = """
 .li .n{font-family:'Display';font-weight:800;font-size:54px;color:%s;min-width:62px;}
 .li .t{font-weight:600;font-size:36px;line-height:1.3;}
 .li .t span{display:block;font-weight:400;font-size:26px;color:rgba(255,255,255,0.68);margin-top:6px;}
+.tight .li{padding:12px 0;gap:22px;}
+.tight .li .n{font-size:44px;min-width:56px;}
+.tight .li .t{font-size:32px;line-height:1.2;}
+.tight .li .t span{font-size:23px;margin-top:2px;}
 """ % ACCENT
 
 
@@ -393,10 +397,19 @@ def k_list(c):
     if c.get("kicker"):
         out += f'<div class="kicker">{esc(c["kicker"])}</div>'
     out += f'<div class="disp" style="font-size:{px(c.get("size", 92))}px;margin-bottom:28px">{rich(c["title"])}</div>'
-    for i, item in enumerate(c["items"], 1):
-        head, note = (item if isinstance(item, (list, tuple)) else (item, ""))
-        out += (f'<div class="li"><div class="n">{i:02d}</div><div class="t">{esc(head)}'
+    tight = c.get("tight", len(c["items"]) >= 6)
+    if tight:
+        out += '<div class="tight">'
+    for i, item in enumerate(c["items"], c.get("start", 1)):
+        item = item if isinstance(item, (list, tuple)) else (item, "")
+        head, note = item[0], item[1]
+        num = item[2] if len(item) > 2 else f"{i:02d}"
+        out += (f'<div class="li"><div class="n">{esc(num)}</div><div class="t">{esc(head)}'
                 f'{f"<span>{esc(note)}</span>" if note else ""}</div></div>')
+    if tight:
+        out += '</div>'
+    if c.get("body"):
+        out += f'<div class="body">{rich(c["body"])}</div>'
     if SHOW_SOURCES and c.get("source"):
         out += f'<div class="source">Source: {esc(c["source"])}</div>'
     return out
@@ -419,7 +432,8 @@ COUNTDOWN_CSS = """
 def k_countdown(c):
     n = c.get("days", days_to(PRESIDENTIAL_DAY))
     out = f'<div class="kicker">{esc(c.get("kicker", "Saturday 16 January 2027"))}</div>'
-    out += f'<div class="big">{n}</div>'
+    big = f' style="font-size:{px(c["big"])}px"' if c.get("big") else ""
+    out += f'<div class="big"{big}>{n}</div>'
     out += f'<div class="disp" style="font-size:{px(c.get("size", 108))}px;margin-top:26px">{rich(c.get("title", "Days to *election day.*"))}</div>'
     if c.get("body"):
         out += f'<div class="body">{rich(c["body"])}</div>'

@@ -108,3 +108,33 @@ Newest first.
   JSON are our reading; check spellings and order for the less known names.
 - The 103.4m register figure is INEC's October 2026 update, not the final
   register. Update when INEC publishes the final number.
+
+## 20 Nov 2026: Day 56 card no longer plain
+Arkcore: the green card in the Day 56 photo was plain. `tools/pvc_card.py`
+draws a generic voter-card face (no coat of arms, no INEC logo, grey bars
+instead of real details) onto the card, keeping the thumb in front and the
+photo's light. Output `images/ai/ai-16-pvc-proud-card.png`. The countdown
+number now takes a `big=` size; Day 56 uses 320 so the date line clears the card.
+
+## 26 Nov 2026: Days 46 to 1 built
+Arkcore asked for every remaining daily post. All 46 days are built and set to
+`built` in the sheet, Owner Claude, for team review. Mix: carousels, singles
+and six voiced videos (Days 43, 32, 24, 16, 7 and 1, Format changed to Video).
+The day scripts were written by `tools/_gen/batch1.py` to `batch4.py` and
+`tools/_gen/videos.py` (these also write each captions.md); each day still has
+its own `tools/day_NN.py` to re-render.
+
+- Candidates: "Meet the candidates" Parts 2 to 6 (Days 45, 41, 37, 33, 30)
+  use `candidate_slide`; every ticket shows "PHOTO TO COME" until real photos
+  arrive. Day 29 lists all running mates; Day 27 the six women.
+- New AI photos (Figma): ai-18 bus park, ai-19 airport, ai-22 official
+  explains, ai-23 inked group, ai-24 peace walk, ai-26 results wall, ai-27
+  wheelchair voter. Prompts in `PROMPTS_GUIDE.md`. Figma's plan hit its call
+  limit, so four more planned photos were not made and existing ones reused.
+- `k_list`: items can carry their own number, `start=` sets the first number,
+  an optional `body` line, and lists of six or more go tight so they clear the
+  footer.
+- Marked VERIFY in captions: Christmas travel and transfer window (Day 23),
+  vote-buying law (21), polling unit steps (18), glossary (17), rights (13),
+  ballot cancellation (9), Japa / no diaspora voting (24), results process
+  (16), movement restriction (7).

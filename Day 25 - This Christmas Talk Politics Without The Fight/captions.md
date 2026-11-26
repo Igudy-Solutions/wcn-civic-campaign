@@ -1,32 +1,45 @@
-# Day 25, This Christmas, talk politics without the fight.
+# Day 25, This Christmas Talk Politics Without The Fight
 
 **Post on** Tue 22 Dec 2026
 **Format** Single
 **Pillar** Peaceful Participation
-**Status** planned
-**Built by** `tools/day_25.py` (not written yet)
+**Status** built, for team review
+**Built by** `tools/day_25.py`
 
-## Idea
-
-Holiday family conversations
+Holiday conversations: talk about the election with family without falling out.
 
 ## The slides
 
-| # | What it carries |
-|---|---|
-| 1 | Cover: This Christmas, talk politics without the fight. |
+| # | Photo | What it carries |
+|---|---|---|
+| 1 | Family around the dinner table | Talk politics, skip the fight. Ask, listen, issues not insults, know when to stop |
+
+## Sources
+
+(not printed on the slides)
+
+- No figures on this post
 
 ## Instagram caption
 
-(write here)
+The whole family is home this Christmas. Someone will bring up the election.
+
+Talk about it. Just skip the fight:
+Ask before you argue.
+Listen to the answer.
+Keep it about issues, not tribe or religion.
+Know when to change the subject and pass the rice.
+
+Elections come every four years. Family is every year.
 
 #YourVoteYourVoice #YourVoteCounts #NigeriaDecides2027 #25DaysToGo
 
 ## X (Twitter)
 
-Max 4 images per post. A carousel over 4 slides goes out as a thread:
-post 1 takes slides 1 to 4, each reply takes the next 4. Under 280 characters each.
+**Post 1**
 
-**Post 1** (slides 1 to 4)
+The whole family is home this Christmas. Someone will bring up the election.
 
-(write here)
+Talk politics. Skip the fight. Ask, listen, keep it about issues, and know when to pass the rice.
+
+Family first. #NigeriaDecides2027

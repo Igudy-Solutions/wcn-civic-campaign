@@ -1,32 +1,39 @@
-# Day 22, Merry Christmas. Peace at home, peace at the polls.
+# Day 22, Merry Christmas
 
 **Post on** Fri 25 Dec 2026
 **Format** Single
 **Pillar** Peaceful Participation
-**Status** planned
-**Built by** `tools/day_22.py` (not written yet)
+**Status** built, for team review
+**Built by** `tools/day_22.py`
 
-## Idea
-
-25 Dec
+Christmas greeting with the campaign's peace message.
 
 ## The slides
 
-| # | What it carries |
-|---|---|
-| 1 | Cover: Merry Christmas. Peace at home, peace at the polls. |
+| # | Photo | What it carries |
+|---|---|---|
+| 1 | Community peace walk, pastor and imam together | Merry Christmas. Peace at home, peace at the polls |
+
+## Sources
+
+(not printed on the slides)
+
+- No figures on this post
 
 ## Instagram caption
 
-(write here)
+Merry Christmas from all of us at World Changers Network.
+
+Peace at home. Peace at the polls.
+
+Whatever your plans today, and whoever you'll vote for next month, we go into January as neighbours.
 
 #YourVoteYourVoice #YourVoteCounts #NigeriaDecides2027 #22DaysToGo
 
 ## X (Twitter)
 
-Max 4 images per post. A carousel over 4 slides goes out as a thread:
-post 1 takes slides 1 to 4, each reply takes the next 4. Under 280 characters each.
+**Post 1**
 
-**Post 1** (slides 1 to 4)
+Merry Christmas from World Changers Network.
 
-(write here)
+Peace at home. Peace at the polls. We go into January as neighbours, whoever we vote for. #NigeriaDecides2027

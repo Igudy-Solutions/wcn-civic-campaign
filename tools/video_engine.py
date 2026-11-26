@@ -328,7 +328,7 @@ const [,, html, out, fps, dur, mode, w, h, stills, audio] = process.argv;
     const ff = spawn('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', fps,
       '-c:v', 'mjpeg', '-i', '-', '-i', audio, '-map', '0:v', '-map', '1:a',
       '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', '18', '-preset', 'medium',
-      '-c:a', 'aac', '-b:a', '192k', '-shortest', '-movflags', '+faststart', '-r', fps, out],
+      '-af', 'loudnorm=I=-14:TP=-1.5:LRA=11', '-ar', '48000', '-c:a', 'aac', '-b:a', '192k', '-shortest', '-movflags', '+faststart', '-r', fps, out],
       { stdio: ['pipe', 'inherit', 'inherit'] });
     const n = Math.round(+fps * +dur);
     for (let f = 0; f < n; f++) {

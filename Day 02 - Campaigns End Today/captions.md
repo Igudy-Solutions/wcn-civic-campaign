@@ -1,32 +1,39 @@
-# Day 2, Campaigns end today.
+# Day 2, Campaigns End Today
 
 **Post on** Thu 14 Jan 2027
 **Format** Single
 **Pillar** Know the Process
-**Status** planned
-**Built by** `tools/day_02.py` (not written yet)
+**Status** built, for team review
+**Built by** `tools/day_02.py`
 
-## Idea
-
-14 Jan. Campaigns end 24 hours before election day. No candidate content from here
+Campaigns end 24 hours before the vote. No candidate content from here.
 
 ## The slides
 
-| # | What it carries |
-|---|---|
-| 1 | Cover: Campaigns end today. |
+| # | Photo | What it carries |
+|---|---|---|
+| 1 | Queue outside a polling unit | Campaigns end today. The choice is yours now |
+
+## Sources
+
+(not printed on the slides)
+
+- Campaigns end 24 hours before polling day: Electoral Act; INEC timetable for the 16 Jan 2027 elections
 
 ## Instagram caption
 
-(write here)
+Campaigns end today.
+
+By law, campaigning stops 24 hours before election day. The jingles stop. The rallies stop. The choice is yours now.
+
+Tonight: PVC ready, polling unit confirmed, Saturday planned.
 
 #YourVoteYourVoice #YourVoteCounts #NigeriaDecides2027 #2DaysToGo
 
 ## X (Twitter)
 
-Max 4 images per post. A carousel over 4 slides goes out as a thread:
-post 1 takes slides 1 to 4, each reply takes the next 4. Under 280 characters each.
+**Post 1**
 
-**Post 1** (slides 1 to 4)
+Campaigns end today. By law, campaigning stops 24 hours before election day.
 
-(write here)
+The choice is yours now. PVC ready, polling unit confirmed, Saturday planned. #NigeriaDecides2027

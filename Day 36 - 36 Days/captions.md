@@ -1,32 +1,41 @@
-# Day 36, 36 days. Your polling unit code is on the back of your PVC.
+# Day 36, 36 Days
 
 **Post on** Fri 11 Dec 2026
 **Format** Single
 **Pillar** Know the Process
-**Status** planned
-**Built by** `tools/day_36.py` (not written yet)
+**Status** built, for team review
+**Built by** `tools/day_36.py`
 
-## Idea
-
-whyvote get-ready. Units can move, check before January
+Countdown single. Know your polling unit before January: it's on your PVC, and it's worth confirming with INEC.
 
 ## The slides
 
-| # | What it carries |
-|---|---|
-| 1 | Cover: 36 days. Your polling unit code is on the back of your PVC. |
+| # | Photo | What it carries |
+|---|---|---|
+| 1 | Young woman holding up her voter card | 36 days. Do you know your polling unit? It's on your PVC. Confirm it with INEC |
+
+## Sources
+
+(not printed on the slides)
+
+- Your polling unit details are on your PVC; confirm them through INEC's official voter verification channels or your INEC office
 
 ## Instagram caption
 
-(write here)
+36 days to Saturday 16 January 2027.
+
+Do you know your polling unit? Not roughly. Exactly.
+
+It's printed on your PVC. Polling units can be moved or added, so confirm yours with INEC's official voter verification or at your INEC office before January. Then walk or drive past it once, so you know the way.
 
 #YourVoteYourVoice #YourVoteCounts #NigeriaDecides2027 #36DaysToGo
 
 ## X (Twitter)
 
-Max 4 images per post. A carousel over 4 slides goes out as a thread:
-post 1 takes slides 1 to 4, each reply takes the next 4. Under 280 characters each.
+**Post 1**
 
-**Post 1** (slides 1 to 4)
+36 days to election day.
 
-(write here)
+Do you know your polling unit? Exactly, not roughly.
+
+It's printed on your PVC. Units can move, so confirm yours with INEC before January. #NigeriaDecides2027

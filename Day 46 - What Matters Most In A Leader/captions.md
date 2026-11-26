@@ -1,32 +1,47 @@
-# Day 46, What matters most in a leader? Vote in our poll.
+# Day 46, What Matters Most In A Leader
 
 **Post on** Tue 01 Dec 2026
 **Format** Single
 **Pillar** Know Your Power
-**Status** planned
-**Built by** `tools/day_46.py` (not written yet)
+**Status** built, for team review
+**Built by** `tools/day_46.py`
 
-## Idea
-
-Spreadsheet poll: integrity, competence, clear plans, accountability
+Poll: which quality matters most in a leader. Gets people thinking about what they are choosing, not who.
 
 ## The slides
 
-| # | What it carries |
-|---|---|
-| 1 | Cover: What matters most in a leader? Vote in our poll. |
+| # | Photo | What it carries |
+|---|---|---|
+| 1 | Young friends debating on a roadside bench | Poll: 1 Integrity, 2 Competence, 3 A clear plan, 4 Accountability. Answer in the comments |
+
+## Sources
+
+(not printed on the slides)
+
+- No figures on this post
 
 ## Instagram caption
 
-(write here)
+Quick poll. What matters most to you in a leader?
+
+1. Integrity: honest, keeps their word
+2. Competence: can actually do the job
+3. A clear plan: says how, with what money, by when
+4. Accountability: answers to the people
+
+Drop your number in the comments, and vote in our Story poll too. Then ask yourself which candidates on your ballot show the quality you picked.
 
 #YourVoteYourVoice #YourVoteCounts #NigeriaDecides2027 #46DaysToGo
 
 ## X (Twitter)
 
-Max 4 images per post. A carousel over 4 slides goes out as a thread:
-post 1 takes slides 1 to 4, each reply takes the next 4. Under 280 characters each.
+**Post 1**
 
-**Post 1** (slides 1 to 4)
+Quick poll: what matters most in a leader?
 
-(write here)
+1 Integrity
+2 Competence
+3 A clear plan
+4 Accountability
+
+Reply with your number. Then check which candidates on your ballot actually show it. #NigeriaDecides2027

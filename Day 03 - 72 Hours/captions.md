@@ -1,32 +1,46 @@
-# Day 3, 72 hours. Verify before you forward.
+# Day 3, 72 Hours
 
 **Post on** Wed 13 Jan 2027
 **Format** Single
 **Pillar** Know the Process
-**Status** planned
-**Built by** `tools/day_03.py` (not written yet)
+**Status** built, for team review
+**Built by** `tools/day_03.py`
 
-## Idea
-
-Last day before campaigns close
+Final-days misinformation warning: three checks before forwarding.
 
 ## The slides
 
-| # | What it carries |
-|---|---|
-| 1 | Cover: 72 hours. Verify before you forward. |
+| # | Photo | What it carries |
+|---|---|---|
+| 1 | Young man at a bus stop on his phone | 72 hours. Verify before you forward. Who sent it, where's it from, is INEC saying it? |
+
+## Sources
+
+(not printed on the slides)
+
+- No figures on this post
 
 ## Instagram caption
 
-(write here)
+72 hours to go.
+
+Fake results, fake voice notes, fake "breaking news". They peak in these last days.
+
+Before you forward anything, ask:
+Who sent it?
+Where did it come from?
+Is INEC saying it?
+
+If you can't tell, don't share it.
 
 #YourVoteYourVoice #YourVoteCounts #NigeriaDecides2027 #3DaysToGo
 
 ## X (Twitter)
 
-Max 4 images per post. A carousel over 4 slides goes out as a thread:
-post 1 takes slides 1 to 4, each reply takes the next 4. Under 280 characters each.
+**Post 1**
 
-**Post 1** (slides 1 to 4)
+72 hours to go. Fake news peaks now.
 
-(write here)
+Before you forward: who sent it? Where's it from? Is INEC saying it?
+
+If you can't tell, don't share it. #NigeriaDecides2027

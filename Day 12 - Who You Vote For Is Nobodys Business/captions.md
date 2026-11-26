@@ -1,32 +1,43 @@
-# Day 12, Who you vote for is nobody's business. Your ballot is secret.
+# Day 12, Who You Vote For Is Nobodys Business
 
 **Post on** Mon 04 Jan 2027
 **Format** Single
 **Pillar** Know Your Power
-**Status** planned
-**Built by** `tools/day_12.py` (not written yet)
+**Status** built, for team review
+**Built by** `tools/day_12.py`
 
-## Idea
-
-(none)
+The secret ballot: no one is entitled to know how you vote.
 
 ## The slides
 
-| # | What it carries |
-|---|---|
-| 1 | Cover: Who you vote for is nobody's business. Your ballot is secret. |
+| # | Photo | What it carries |
+|---|---|---|
+| 1 | Voter folding a ballot behind a privacy screen | Who you vote for is nobody's business. Your ballot is secret |
+
+## Sources
+
+(not printed on the slides)
+
+- Secret ballot: Electoral Act; no phones in the voting cubicle: INEC guidelines
 
 ## Instagram caption
 
-(write here)
+Who you vote for is nobody's business.
+
+Not your boss's. Not your family's. Not the man offering money.
+
+Your ballot is secret. Don't show it. Don't photograph it. Nobody can make you tell.
+
+Vote with your conscience, fold it and drop it in the box.
 
 #YourVoteYourVoice #YourVoteCounts #NigeriaDecides2027 #12DaysToGo
 
 ## X (Twitter)
 
-Max 4 images per post. A carousel over 4 slides goes out as a thread:
-post 1 takes slides 1 to 4, each reply takes the next 4. Under 280 characters each.
+**Post 1**
 
-**Post 1** (slides 1 to 4)
+Who you vote for is nobody's business.
 
-(write here)
+Not your boss's. Not your family's. Not the man with the money.
+
+Your ballot is secret. Don't show it, don't photograph it. #NigeriaDecides2027

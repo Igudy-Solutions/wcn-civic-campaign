@@ -37,3 +37,12 @@ Added 20 Nov 2026 for Days 56 to 47 (same rules, same Figma file):
 | ai-14-town-hall.png | Town hall, a young woman asking a question into a microphone (a cap badge was blurred so it can't read as a party logo) |
 | ai-15-bus-stop-phone.png | Young man at a Lagos bus stop reading on his phone |
 | ai-16-pvc-proud.png | Young woman holding up a plain green voter card, friends behind |
+| ai-18-bus-park.png | Busy motor park in December, travellers boarding a long-distance bus |
+| ai-19-airport.png | Young woman with a suitcase in a Lagos departure hall, holding a plain green card |
+| ai-22-official-explains.png | Polling official explaining the process to an elderly woman voter |
+| ai-23-inked-group.png | Young friends holding up inked thumbs outside a polling unit |
+| ai-24-peace-walk.png | Community peace walk: young people, elders, a pastor and an imam in white |
+| ai-26-results-wall.png | Residents photographing a result sheet on a polling unit wall at dusk |
+| ai-27-wheelchair-voter.png | Voter in a wheelchair given priority and helped by an official |
+
+- ai-16-pvc-proud-card.png: ai-16-pvc-proud with a generic voter-card face added by tools/pvc_card.py.

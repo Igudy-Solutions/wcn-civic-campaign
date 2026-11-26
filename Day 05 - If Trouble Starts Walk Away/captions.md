@@ -1,32 +1,43 @@
-# Day 5, If trouble starts, walk away. Your life first.
+# Day 5, If Trouble Starts Walk Away
 
 **Post on** Mon 11 Jan 2027
 **Format** Single
 **Pillar** Peaceful Participation
-**Status** planned
-**Built by** `tools/day_05.py` (not written yet)
+**Status** built, for team review
+**Built by** `tools/day_05.py`
 
-## Idea
-
-Safety. VERIFY any reporting channel
+Safety message for the final week: walk away from trouble, report when safe.
 
 ## The slides
 
-| # | What it carries |
-|---|---|
-| 1 | Cover: If trouble starts, walk away. Your life first. |
+| # | Photo | What it carries |
+|---|---|---|
+| 1 | Elderly man and young woman walking | If trouble starts, walk away. Report when safe. Your life first |
+
+## Sources
+
+(not printed on the slides)
+
+- VERIFY before adding any reporting phone number or channel to the caption
 
 ## Instagram caption
 
-(write here)
+If trouble starts at your polling unit, walk away.
+
+Shouting, pushing, snatching ballot boxes: don't join in, and don't get close to film it.
+
+Leave calmly. Keep your family and friends with you. When you're safe, tell the police or INEC officials what you saw.
+
+No vote is worth your life. Your life first.
 
 #YourVoteYourVoice #YourVoteCounts #NigeriaDecides2027 #5DaysToGo
 
 ## X (Twitter)
 
-Max 4 images per post. A carousel over 4 slides goes out as a thread:
-post 1 takes slides 1 to 4, each reply takes the next 4. Under 280 characters each.
+**Post 1**
 
-**Post 1** (slides 1 to 4)
+If trouble starts at your polling unit, walk away.
 
-(write here)
+Don't join in. Don't get close to film it. Leave calmly, keep your people close, and report it when you're safe.
+
+Your life first. #NigeriaDecides2027

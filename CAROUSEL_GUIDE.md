@@ -68,7 +68,7 @@ Markup inside slide text: `*word*` lime, `[word]` lime block behind the word,
 | `statement` | Small lead lines, then the punch in display |
 | `stat` | One big number, label, source |
 | `dates` | Rows of date + what happens |
-| `list` | Numbered points, up to about six |
+| `list` | Numbered points, up to about six. Six or more switch to a tighter layout automatically (`tight=True/False` to force). Items can be `(head, note, "custom number")`; `start=` sets the first number; optional `body` line under the list |
 | `countdown` | Giant day count, for single image countdown days |
 | `candidate` | Party colour bands, cut-out portrait, INEC facts |
 | `cta` | Save. Share. Show up. |

@@ -138,3 +138,14 @@ its own `tools/day_NN.py` to re-render.
   vote-buying law (21), polling unit steps (18), glossary (17), rights (13),
   ballot cancellation (9), Japa / no diaspora voting (24), results process
   (16), movement restriction (7).
+
+## 26 Nov 2026: day folders grouped, Day 51 rewritten, PVC collection special
+- All day folders now live in `Daily Posts/` (Arkcore asked for one folder).
+  `tools/plan.py` (`DAYS_DIR`), `captions_pdf.py` and `_gen/common.py` follow it;
+  day scripts are unchanged because they use `folder_for`.
+- Day 51 rewritten at Arkcore's ask: "Your future is worth fighting for." It
+  leads with the stakes (hospital, school, job, four years) and makes the fight
+  the vote: fight with your PVC, not your fists. Folder renamed to match.
+- PVCs are out, so `Specials/Collect Your PVC` (`tools/special_pvc.py`) starts
+  the collection push: no day count, post now and repost. Collection points and
+  deadline marked VERIFY.

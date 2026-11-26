@@ -33,7 +33,7 @@ def md_html(path):
 
 def main():
     days = []
-    for p in glob.glob(os.path.join(ROOT, "Day *", "captions.md")):
+    for p in glob.glob(os.path.join(ROOT, "Daily Posts", "Day *", "captions.md")):
         n = int(re.match(r"Day (\d+)", os.path.basename(os.path.dirname(p))).group(1))
         if written(p):
             days.append((n, p))

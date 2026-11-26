@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 """Day 51: Thu 26 Nov 2026. Single. Peaceful Participation.
 
-No candidate is worth your life. Disagreement is not a reason for violence.
-Photo: ai-12-handshake (two young men shaking hands outside a polling unit).
+Your future is worth fighting for. Fight with your vote.
+Rewritten 26 Nov (Arkcore): lead with what is at stake and why it is worth
+the fight, instead of only "no candidate is worth your life". The fight is
+the vote: showing up, staying, watching the count. Never violence.
+Photo: ai-23-inked-group (young voters holding up inked thumbs).
 """
 import os
 import sys
@@ -16,12 +19,12 @@ OUT = folder_for(DAY)
 
 SLIDES = [
     ("statement", dict(
-        lead="Disagree. Argue. Debate.\nThen shake hands.",
-        punch="No candidate\nis worth\nyour life.",
-        size=132,
-        body="If trouble starts at your polling unit, walk away and tell the police or INEC officials. Politicians move on. Neighbours stay.",
-        photo="ai-12-handshake.png",
-        pos="50% 15%",
+        lead="Your hospital. Your school. Your job.\nThe next four years are on this ballot.",
+        punch="Your future\nis worth\nfighting for.",
+        size=128,
+        body="Fight with your PVC, not your fists. Show up, stay to watch the count, and walk away from trouble. Violence only wins when good people stay home.",
+        photo="ai-23-inked-group.png",
+        pos="50% 20%",
     )),
 ]
 

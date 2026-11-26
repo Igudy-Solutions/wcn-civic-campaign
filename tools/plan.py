@@ -92,10 +92,15 @@ def write_sheet(rows):
         w.writerows(rows)
 
 
+# Every day's folder lives inside this one folder, not loose in the repo root.
+DAYS_DIR = "Daily Posts"
+
+
 def existing_folder(day):
     prefix = f"Day {day:02d} - "
-    for name in sorted(os.listdir(ROOT)):
-        if name.startswith(prefix) and os.path.isdir(os.path.join(ROOT, name)):
+    base = os.path.join(ROOT, DAYS_DIR)
+    for name in sorted(os.listdir(base)) if os.path.isdir(base) else []:
+        if name.startswith(prefix) and os.path.isdir(os.path.join(base, name)):
             return name
     return None
 
@@ -105,7 +110,7 @@ def folder_for(day):
     renamed topic is picked up without editing the script."""
     for r in read_sheet():
         if r["Day"] == int(day):
-            return f"Day {r['Day']:02d} - {r['Folder title']}"
+            return os.path.join(DAYS_DIR, f"Day {r['Day']:02d} - {r['Folder title']}")
     raise SystemExit(f"Day {day} is not in CONTENT_PLAN.csv")
 
 
@@ -168,13 +173,13 @@ def main():
         want = f"Day {day:02d} - {r['Folder title']}"
         have = existing_folder(day)
         if have and have != want:
-            os.rename(os.path.join(ROOT, have), os.path.join(ROOT, want))
+            os.rename(os.path.join(ROOT, DAYS_DIR, have), os.path.join(ROOT, DAYS_DIR, want))
             print(f"  renamed  {have}  ->  {want}")
             renamed += 1
         elif not have:
-            os.makedirs(os.path.join(ROOT, want))
+            os.makedirs(os.path.join(ROOT, DAYS_DIR, want))
             made += 1
-        cap = os.path.join(ROOT, want, "captions.md")
+        cap = os.path.join(ROOT, DAYS_DIR, want, "captions.md")
         if not os.path.exists(cap):
             with open(cap, "w", encoding="utf-8") as fh:
                 fh.write(STUB.format(**fields(r)))

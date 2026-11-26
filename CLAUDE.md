@@ -63,7 +63,8 @@ update its `tools/day_NN.py` and re-render.
    at most). For a single image copy `tools/day_57_single.py` instead.
 3. Photos go in `images/` (AI scenes in `images/ai/`, candidate cut-outs in
    `images/candidates/`). Name them in `photo="..."`.
-4. `python3 tools/day_NN.py` renders into the day's folder. Check every slide.
+4. `python3 tools/day_NN.py` renders into the day's folder (inside `Daily Posts/`).
+   Check every slide.
 5. Fill in that day's `captions.md`: slide table, sources, Instagram caption,
    X post or thread.
 6. Set Status to `built`, run `plan.py`, commit, push. After it goes live,

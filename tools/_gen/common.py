@@ -19,7 +19,7 @@ def row(day):
 
 def folder(day):
     r = row(day)
-    return os.path.join(ROOT, f"Day {day:02d} - {r['Folder title']}")
+    return os.path.join(ROOT, "Daily Posts", f"Day {day:02d} - {r['Folder title']}")
 
 
 def date_of(day):

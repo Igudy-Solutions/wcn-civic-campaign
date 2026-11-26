@@ -14,7 +14,7 @@ with whyvote.ng; never cite it in a post.
 | 54 | Mon 23 Nov | Single | Vote Wisely | A slogan is not a plan. | built | Claude | Spreadsheet: don't choose based on slogans alone |
 | 53 | Tue 24 Nov | Carousel | Know the Candidates | 18 people want to be your president. Can you name five? | built | Claude | INEC final list. Names and parties as INEC lists them, ballot order. No ranking |
 | 52 | Wed 25 Nov | Video | Vote Wisely | Your vote for 5,000 naira? Here is the maths. | built | Claude | Vote selling over 4 years. 'The bribe can't last you 4 years' |
-| 51 | Thu 26 Nov | Single | Peaceful Participation | No candidate is worth your life. | built | Claude | Spreadsheet: disagreement is not a reason for violence |
+| 51 | Thu 26 Nov | Single | Peaceful Participation | Your future is worth fighting for. Fight with your vote. | built | Claude | Rewritten 26 Nov at Arkcore's ask: the stakes and why it is worth fighting for, with the vote, never with violence |
 | 50 | Fri 27 Nov | Carousel | Know Your Power | They decide your hospital, your school and your job. Do you know who they are? | built | Claude | Spreadsheet carousel: why elections matter beyond election day |
 | 49 | Sat 28 Nov | Carousel | Know the Candidates | Meet the candidates 1 of 6 | built | Claude | Tickets AA, AAC, ADC. Same layout, party colours, INEC facts only |
 | 48 | Sun 29 Nov | Video | Know Your Power | Not your uncle's vote. Not your pastor's. Not your boss's. Yours. | built | Claude | Spreadsheet: your vote should be your decision |

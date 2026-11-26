@@ -31,7 +31,7 @@ downsampled with Pillow, the same pipeline as Eden Centre and Ignovations.
 | `images/` | Your photos. `images/candidates/` for cut-out portraits. |
 | `fonts/` | Sora, the WCN brand font (SIL Open Font License). |
 | `assets/` | Every WCN brand file (logos PNG, JPG, SVG, PDF), style references, the original content plan. See `assets/README.md`. |
-| `Day 57 - ...` to `Day 01 - ...` | One folder per day: rendered slides plus `captions.md`. |
+| `Daily Posts/` | One folder per day, `Day 57 - ...` to `Day 01 - ...`: rendered slides or video plus `captions.md`. |
 | `Specials/` | Posts outside the daily countdown, e.g. `Parties On The Ballot`. |
 
 ## Rendering a day
